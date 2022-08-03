@@ -322,7 +322,7 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 6.7708333333vw;
+  width: 130px;
   height: 3.1rem;
   -webkit-transition: background ease-in-out 300ms;
   transition: background ease-in-out 300ms;
@@ -366,7 +366,7 @@ aside {
   display: block;
   width: 15px;
   height: 15px;
-  top: 47px;
+  top: 2.8125vw;
   right: 10px;
   border: none;
   background-color: transparent;
@@ -675,10 +675,15 @@ textarea {
   margin-top: 20px;
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 870px) and (min-width: 374px) {
+  .checkout__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

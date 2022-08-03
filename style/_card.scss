@@ -155,7 +155,7 @@ aside {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: vw(130);
+  width: 130px;
   height: 3.1rem;
   transition: background ease-in-out 300ms;
   position: relative;
@@ -189,7 +189,7 @@ aside {
   display: block;
   width: 15px;
   height: 15px;
-  top: 47px;
+  top: vw(54);
   right: 10px;
   border: none;
   background-color: transparent;

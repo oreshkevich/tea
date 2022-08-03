@@ -1,7 +1,10 @@
 @media (max-width: 992px) {
-  .container {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+@media screen and (max-width: 870px) and (min-width: 374px) {
+  .checkout__row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
   }
 }
