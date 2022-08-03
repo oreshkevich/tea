@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="https://moschaitorg.ru/favicon.ico" type="image/x-icon">
+  <title>Backed</title>
+</head>
+
+<body>
+  <header></header>
+  <div class="page-section">
+    <div class="container">
+      <h1 class="page-title">Моя корзина</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="grid">
+      <main>
+        <div class="basket__item">
+          <div class="basket__item-table">
+            <div class="cart-item">
+              <div class="basket__item-list">
+                <div class="basket__item-block-image">
+                  <a href="#" class="cart-item__image">
+                    <img class="basket__item-image" alt="Улун Най Сян Цзинь Сюань" src="./assets/img/1.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="cart-item__column">
+                <a href="#" class="cart-item__title">
+                  <span data-entity="basket-item-name">Улун Най Сян Цзинь Сюань (Молочный улун), 1-й категории</span>
+                </a>
+                <div class="cart-item__row">
+                  <div class="tea__quantity basket-item-block-amount">
+                    <span class="tea__button tea__button--left ">
+                    </span>
+                    <div class="tea__overlay">
+                      <input type="hidden" value="1" id="basket-item">
+                      <p class="tea-content">
+                        <span class="tea-content__value">50</span>
+                        <span class="tea-content__metric">г</span>
+                      </p>
+                    </div>
+
+                    <span class="tea__button tea__button--right">
+                    </span>
+
+                  </div>
+                  <div class="cart-item-price">
+                    <p class="cart-item-price__value"><span>399 </span>&nbsp;₽
+                    </p>
+                  </div>
+                </div>
+                <button type="button" class="cart-item__remove" aria-label="close">
+                </button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="basket__item-list">
+                <div class="basket__item-block-image">
+                  <a href="#" class="cart-item__image">
+                    <img class="basket__item-image" alt="Улун Най Сян Цзинь Сюань" src="./assets/img/1.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="cart-item__column">
+                <a href="#" class="cart-item__title">
+                  <span data-entity="basket-item-name">Улун Най Сян Цзинь Сюань (Молочный улун), 1-й категории</span>
+                </a>
+                <div class="cart-item__row">
+                  <div class="tea__quantity basket-item-block-amount">
+                    <span class="tea__button tea__button--left ">
+                    </span>
+                    <div class="tea__overlay">
+                      <input type="hidden" value="1" id="basket-item">
+                      <p class="tea-content">
+                        <span class="tea-content__value">50</span>
+                        <span class="tea-content__metric">г</span>
+                      </p>
+                    </div>
+
+                    <span class="tea__button tea__button--right">
+                    </span>
+
+                  </div>
+                  <div class="cart-item-price">
+                    <p class="cart-item-price__value"><span>399 </span>&nbsp;₽
+                    </p>
+                  </div>
+                </div>
+                <button type="button" class="cart-item__remove" aria-label="close">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="basket-coupon-block">
+            <div class="checkout-field-container checkout-field-container--normal">
+              <div class="checkout-field-container__row checkout-field-container__row--promocode">
+                <div class="checkout-field checkout-field--promo-code">
+                  <input type="text" class="checkout-field__field" placeholder="Код купона" id="basket-coupon-input"
+                    value="">
+                </div>
+                <button class="promocode__btn button">Применить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div data-entity="basket-total-block">
+          <div class="basket-checkout-container" data-entity="basket-checkout-aligner">
+            <div class="checkout__column checkout-info">
+              <div class="checkout-info-cart">
+                <div class="checkout-info-cart-item">
+                  <p class="checkout-info-cart-item__name"><span>2</span>
+                    товара</p>
+                  <p class="checkout-info-cart-item__price">1 335 ₽</p>
+                </div>
+                <div class="checkout-info-cart-item">
+                  <p class="checkout-info-cart-item__name discount"> Скидка</p>
+                  <p class="checkout-info-cart-item__price discount">0 %</p>
+                </div>
+                <div class="checkout-info-cart__stars"></div>
+                <div class="checkout-info-cart-item checkout-info-cart-item--result">
+                  <a class="checkout-info-cart-item__name checkout-info-cart-item__name--result">Итого</a>
+                  <p class="checkout-info-cart-item__price">1 335 ₽</p>
+                </div>
+              </div>
+              <a href="#" class="checkout-info__button klk-zakazat">
+                Перейти к оформлению <span class="checkout-info__button-arrow"></span>
+              </a>
+              <div class="checkout-info__links">
+                <a href="#" class="checkout-info__link" data-action="open">Купить в 1 клик</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <footer></footer>
+</body>
+
+</html>
