@@ -1,0 +1,35 @@
+@media (max-width: 917px) {
+  .grid-decoration {
+    padding-top: rem(0);
+    margin-bottom: rem(0);
+    height: 100%;
+    display: grid;
+    grid-gap: rem(0);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      'main'
+      'aside';
+    justify-items: center;
+  }
+  aside {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .order-price__row {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .order-price__row .order-price-item {
+    margin-right: 5px;
+    width: calc(50% - 0.5625rem);
+  }
+}

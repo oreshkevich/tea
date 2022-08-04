@@ -1337,7 +1337,7 @@ aside {
   margin-bottom: 1.125rem;
   border-radius: 0.3125rem;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   position: relative;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -1420,4 +1420,46 @@ aside {
 .basket-total-block {
   position: sticky;
   top: 0;
+}
+
+@media (max-width: 917px) {
+  .grid-decoration {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    height: 100%;
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main" "aside";
+    justify-items: center;
+  }
+  aside {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  .order-price__row {
+    margin-top: 1.875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .order-price__row .order-price-item {
+    margin-right: 5px;
+    width: calc(50% - 0.5625rem);
+  }
 }/*# sourceMappingURL=style.css.map */
