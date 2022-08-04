@@ -106,6 +106,10 @@ span.header__location,
   transition: 0.5s;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .page-title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 800;
@@ -1459,7 +1463,26 @@ aside {
         flex-wrap: wrap;
   }
   .order-price__row .order-price-item {
-    margin-right: 5px;
-    width: calc(50% - 0.5625rem);
+    margin-right: 16px;
+    width: calc(45% - 0.5625rem);
+  }
+  .order-checkout-field__field {
+    margin-top: 0.3125rem;
+    padding-left: 0.5rem;
+    height: 2.875rem;
+  }
+}
+@media (max-width: 470px) {
+  .order-checkout-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order-checkout-field--family {
+    margin-left: 0rem;
   }
 }/*# sourceMappingURL=style.css.map */

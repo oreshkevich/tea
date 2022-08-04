@@ -29,7 +29,22 @@
     flex-wrap: wrap;
   }
   .order-price__row .order-price-item {
-    margin-right: 5px;
-    width: calc(50% - 0.5625rem);
+    margin-right: 16px;
+    width: calc(45% - 0.5625rem);
+  }
+  .order-checkout-field__field {
+    margin-top: 0.3125rem;
+    padding-left: 0.5rem;
+    height: 2.875rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .order-checkout-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .order-checkout-field--family {
+    margin-left: 0rem;
   }
 }
