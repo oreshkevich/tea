@@ -189,7 +189,7 @@ aside {
   display: block;
   width: 15px;
   height: 15px;
-  top: vw(54);
+  top: rem(54);
   right: 10px;
   border: none;
   background-color: transparent;
@@ -383,7 +383,6 @@ textarea {
   position: relative;
   transition: background-color ease-in-out 200ms;
   background-color: #a1c656;
-
   background-position: top center;
   background-repeat: repeat-x;
   background-size: 0.8rem;
