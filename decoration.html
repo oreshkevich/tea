@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="https://moschaitorg.ru/favicon.ico" type="image/x-icon">
+  <title>Backed</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="./index.html">Корзина</a>
+    </div>
+  </header>
+  <section class="page-section">
+    <div class="container">
+      <h1 class="page-title">Оформление заказа</h1>
+    </div>
+  </section>
+  <div class="container">
+    <div class="grid-decoration">
+      <main>
+        <div class="order-checkout__row">
+          <div class="order-checkout__column order-checkout-fields">
+            <form method="post">
+              <div class="order-checkout-field--phone form__wrapper ">
+                <label for="tel" class="order-checkout-field__label ">Телефон</label>
+                <input class="form-input tel" type="tel" name="tel" id="tel" placeholder="+7(_ _ _)_ _-_ _-_ _"
+                  value="">
+              </div>
+              <div id="order_form_content">
+                <div class="order-checkout-field-container order-checkout-field-container--normal">
+                  <div class="order-checkout-field-container__row">
+                    <input id="field_name" type="hidden" name="ORDER_PROP_1" value="">
+                    <div class="order-checkout-field order-checkout-field--name">
+                      <label for="first_name" class="order-checkout-field__label">Имя</label>
+                      <input type="text" class="order-checkout-field__field" id="first_name" value="">
+                    </div>
+                    <div class="order-checkout-field order-checkout-field--family">
+                      <label for="second_name" class="order-checkout-field__label">Фамилия</label>
+                      <label class="order-checkout-field__label order-checkout-field__label_mini">Необязательно</label>
+                      <input type="text" class="order-checkout-field__field" id="second_name" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="order-checkout-field-container order-checkout-field-container--normal">
+                  <div class="order-checkout-field-container__row">
+                    <div class="order-checkout-field order-checkout-field--100">
+                      <div class="form__wrapper">
+                        <label for="email" class="order-checkout-field__label">E-Mail</label>
+                        <input type="email" id="email" name="email" maxlength="30" required
+                          class="order-checkout-field__field" spellcheck="false" value="">
+                      </div>
+                      <p class="order-checkout-field-container__description">На него пришлём уведомления о
+                        статусе заказа.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-checkout-field-container order-checkout-field-container--normal">
+                  <div class="order-checkout-field-container__row">
+                    <div class="order-checkout-field order-checkout-field--100">
+                      <div class="form__wrapper">
+                        <label for="email" class="order-checkout-field__label">Метод связи</label>
+                        <select class="input-form banner-icons-four" name="select" id="select">
+                          <option id="telephone" class="popup-option" value="telephone">Телефон
+                          </option>
+                          <option id="WhatsApp" class="popup-option" value="WhatsApp">WhatsApp
+                          </option>
+                          <option id="mail" class="popup-option" value="mail">Почта
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-checkout-field-container order-checkout-field-container--normal">
+                  <div class="order-checkout-field-container__row">
+                    <div class="order-checkout-field order-checkout-field--100 order-checkout-field--success">
+                      <div class="order-checkout-field-container__find-my-geo"></div>
+                      <label class="order-checkout-field__label">Город доставки</label>
+                      <div class="decoration-soa-property-container" id="soa-property-container-7">
+                        <textarea cols="30" rows="3" name="ORDER_PROP_7" id="soa-property-7"
+                          placeholder="Адрес доставки" class="decoration-form-control">
+                      </textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery">
+                  <h3 class="order-checkout__title--h3">Способ доставки</h3>
+                  <div id="delivery-other" class="delivery-hide">
+                    <div class="delivery__row delivery__row--single-line">
+                      <label for="pickup" class="delivery-item  delivery-item--active">
+                        <span class="delivery-item__title">Самовывоз</span>
+                        <span class="delivery-item__description">
+                          5 – 7 авг <br>
+                          <span>от 135 руб.</span>
+                        </span>
+                        <input class="store_radio" type="radio" id="pickup" value="pickup" checked="checked">
+                      </label>
+                      <label for="postamat" class="delivery-item">
+                        <span class="delivery-item__title">Постаматы</span>
+                        <span class="delivery-item__description">
+                          6 – 7 авг <br>
+                          <span>от 135 руб.</span>
+                        </span>
+                        <input class="store_radio" type="radio" id="postamat" value="postamat">
+                      </label>
+                      <label for="courier" class="delivery-item">
+                        <span class="delivery-item__title">Курьер</span>
+                        <span class="delivery-item__description">
+                          5 авг <br>
+                          <span>300 руб.</span>
+                        </span>
+                        <input class="store_radio" type="radio" id="courier" value="courier">
+                      </label>
+                    </div>
+                    <div class="delivery__row delivery__row--single-line">
+                      <label for="boxberry-pickup" class="delivery-item">
+                        <span class="delivery-item__title">Boxberry</span>
+                        <span class="delivery-item__description">
+                          5 – 7 авг <br>
+                          <span>от 135 руб.</span>
+                        </span>
+                        <input class="store_radio" type="radio" id="boxberry-pickup" value="pickup" checked="checked">
+                      </label>
+                      <label for="boxberry-postamat" class="delivery-item">
+                        <span class="delivery-item__title">Boxberry курьер</span>
+                        <span class="delivery-item__description">
+                          6 – 7 авг <br>
+                          <span>от 135 руб.</span>
+                        </span>
+                        <input class="store_radio" type="radio" id="boxberry-postamat" value="postamat">
+                      </label>
+                      <label for="boxberry-courier" class="delivery-item">
+                        <span class="delivery-item__title">Почта россии</span>
+                        <span class="delivery-item__description">
+                          5 авг <br>
+                          <span>300 руб.</span>
+                        </span>
+                        <input class="store_radio" type="radio" id="boxberry-courier" value="courier">
+                      </label>
+                    </div>
+                    <div class="order-delivery-courier">
+                      <div class="delivery-hide delivery-hide--active">
+                        <div class="order-checkout-field-container order-checkout-field-container--normal">
+                          <div class="order-checkout-field-container__row">
+                            <div class="order-checkout-field order-checkout-field--100">
+                              <label class="order-checkout-field__label">Улица, дом, квартира</label>
+                              <textarea class="order-checkout-field__field order-checkout-field__field--message"
+                                cols="30" rows="1"></textarea>
+                              <div class="order-checkout-field order-checkout-field--100 checkout-field--data">
+                                <div class="form__wrapper">
+                                  <label class="order-checkout-field__label">Желаемая дата доставки</label>
+                                  <input class="input-form-data" name="example_date" type="date" value="" required=""
+                                    min="2022-08-04">
+                                </div>
+                                <div class="form__wrapper">
+                                  <label class="order-checkout-field__label">Время доставки</label>
+                                  <input class="input-form-time" type="time" name="Time" list="times" value=""
+                                    required="">
+                                  <datalist id="times">
+                                    <option value="09:00"></option>
+                                    <option value="09:30"></option>
+                                    <option value="10:00"></option>
+                                    <option value="10:30"></option>
+                                    <option value="11:00"></option>
+                                    <option value="11:30"></option>
+                                    <option value="12:00"></option>
+                                    <option value="12:30"></option>
+                                    <option value="13:00"></option>
+                                    <option value="13:30"></option>
+                                    <option value="14:00"></option>
+                                    <option value="14:30"></option>
+                                    <option value="15:00"></option>
+                                    <option value="15:30"></option>
+                                    <option value="16:00"></option>
+                                    <option value="16:30"></option>
+                                    <option value="17:00"></option>
+                                    <option value="17:30"></option>
+                                    <option value="18:00"></option>
+                                  </datalist>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-checkout-break-row"></div>
+                <div>
+                  <div class="order-price-container">
+                    <div class="order-price">
+                      <h2 class="order-checkout__title--small">Способ оплаты</h2>
+                      <div class="order-price__row">
+                        <label class="order-price-item  order-price-item--active">
+                          <span class="order-price-item__image order-price-item__image_AC"> </span>
+                          <span class="order-price-item__title">Картой на сайте</span>
+                          <br>
+                          <input type="radio" class="store_radio" checked="checked">
+                        </label>
+                        <label class="order-price-item  ">
+                          <span class="order-price-item__image order-price-item__image_cash"> </span>
+                          <span class="order-price-item__title">Наличными при получении</span>
+                          <br>
+                          <input type="radio" class="store_radio">
+                        </label>
+                        <label class="order-price-item ">
+                          <span class="order-price-item__image order-price-item__image_AC"> </span>
+                          <span class="order-price-item__title">Банковской картой при получении</span>
+                          <br>
+                          <input type="radio" class="store_radio" checked="checked">
+                        </label>
+                        <label class="order-price-item ">
+                          <span class="order-price-item__image order-price-item__image_BB"> </span>
+                          <span class="order-price-item__title">Банковской картой при получении</span>
+                          <br>
+                          <input type="radio" class="store_radio">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-checkout-break-row"></div>
+
+                <div class="order-checkout-field-container order-checkout-field-container--normal">
+                  <div class="order-checkout-field-container__row">
+                    <div class="order-checkout-field order-checkout-field--100">
+                      <label class="order-checkout-field__label">Дополнительная информация</label>
+                      <textarea class="order-checkout-field__field order-checkout-field__field--message" cols="30"
+                        rows="10"
+                        placeholder="ФИО, если получать будете не Вы, дополнительные номера телефонов, код домофона и т.п."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="basket-total-block">
+          <div class="basket-checkout-container" data-entity="basket-checkout-aligner">
+            <div class="checkout__column checkout-info">
+              <div class="checkout-info-cart">
+                <div class="checkout-info-cart-item">
+                  <p class="checkout-info-cart-item__name"><span>2</span>
+                    товара</p>
+                  <p class="checkout-info-cart-item__price">1 335 ₽</p>
+                </div>
+                <div class="checkout-info-cart-item">
+                  <p class="checkout-info-cart-item__name">Доставка</p>
+                  <p class="checkout-info-cart-item__price">бесплатно</p>
+                </div>
+                <div class="checkout-info-cart-item">
+                  <p class="checkout-info-cart-item__name">Накопительная скидка</p>
+                  <p class="checkout-info-cart-item__price">0 %</p>
+                </div>
+                <div class="checkout-info-cart__stars"></div>
+                <div class="checkout-info-cart-item discount ">
+                  <a class="checkout-info-cart-item__name">Итого с доставкой</a>
+                  <p class="checkout-info-cart-item__price">1 335 ₽</p>
+                </div>
+              </div>
+              <a href="./decoration.html" class="checkout-info__button">
+                Перейти к оплате <span class="checkout-info__button-arrow"></span>
+              </a>
+              <p class="order-checkout-info__description">Нажимая кнопку "Перейти к оплате", вы подтверждаете
+                заказ и даете
+                согласие
+                на обработку своих персональных данных.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer></footer>
+</body>
+
+</html>
