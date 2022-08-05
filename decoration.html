@@ -30,7 +30,7 @@
       <main>
         <div class="order-checkout__row">
           <div class="order-checkout__column order-checkout-fields">
-            <form method="post" class="order-form__card">
+            <form method="post">
               <div class="order-checkout-field--phone form__wrapper ">
                 <label for="tel" class="order-checkout-field__label ">Телефон</label>
                 <input class="form-input tel" type="tel" name="tel" id="tel" placeholder="+7(_ _ _)_ _-_ _-_ _"
@@ -97,57 +97,59 @@
                 <div class="delivery">
                   <h3 class="order-checkout__title--h3">Способ доставки</h3>
                   <div id="delivery-other" class="delivery-hide">
-                    <div class="delivery__row delivery__row--single-line">
-                      <label for="pickup" class="delivery-item  delivery-item--active" id="order-pickup">
-                        <span class="delivery-item__title">Самовывоз</span>
-                        <span class="delivery-item__description">
-                          5 – 7 авг <br>
-                          <span>от 135 руб.</span>
-                        </span>
-                        <input class="store_radio" type="radio" id="pickup" value="pickup" checked="checked">
-                      </label>
-                      <label for="postamat" class="delivery-item" id="order-postamat">
-                        <span class="delivery-item__title">Постаматы</span>
-                        <span class="delivery-item__description">
-                          6 – 7 авг <br>
-                          <span>от 135 руб.</span>
-                        </span>
-                        <input class="store_radio" type="radio" id="postamat" value="postamat">
-                      </label>
-                      <label for="courier" class="delivery-item" id="order-courier">
-                        <span class="delivery-item__title">Курьер</span>
-                        <span class="delivery-item__description">
-                          5 авг <br>
-                          <span>300 руб.</span>
-                        </span>
-                        <input class="store_radio" type="radio" id="courier" value="courier">
-                      </label>
-                    </div>
-                    <div class="delivery__row delivery__row--single-line">
-                      <label for="boxberry-pickup" class="delivery-item">
-                        <span class="delivery-item__title">Boxberry</span>
-                        <span class="delivery-item__description">
-                          5 – 7 авг <br>
-                          <span>от 135 руб.</span>
-                        </span>
-                        <input class="store_radio" type="radio" id="boxberry-pickup" value="" checked="checked">
-                      </label>
-                      <label for="boxberry-postamat" class="delivery-item">
-                        <span class="delivery-item__title">Boxberry курьер</span>
-                        <span class="delivery-item__description">
-                          6 – 7 авг <br>
-                          <span>от 135 руб.</span>
-                        </span>
-                        <input class="store_radio" type="radio" id="boxberry-postamat" value="">
-                      </label>
-                      <label for="boxberry-courier" class="delivery-item">
-                        <span class="delivery-item__title">Почта россии</span>
-                        <span class="delivery-item__description">
-                          5 авг <br>
-                          <span>300 руб.</span>
-                        </span>
-                        <input class="store_radio" type="radio" id="boxberry-courier" value="">
-                      </label>
+                    <div class="delivery-hide order-form__card">
+                      <div class="delivery__row delivery__row--single-line">
+                        <label for="pickup" class="delivery-item  delivery-item--active" id="order-pickup">
+                          <span class="delivery-item__title">Самовывоз</span>
+                          <span class="delivery-item__description">
+                            5 – 7 авг <br>
+                            <span>от 135 руб.</span>
+                          </span>
+                          <input class="store_radio" type="radio" id="pickup" value="pickup" checked="checked">
+                        </label>
+                        <label for="postamat" class="delivery-item" id="order-postamat">
+                          <span class="delivery-item__title">Постаматы</span>
+                          <span class="delivery-item__description">
+                            6 – 7 авг <br>
+                            <span>от 135 руб.</span>
+                          </span>
+                          <input class="store_radio" type="radio" id="postamat" value="postamat">
+                        </label>
+                        <label for="courier" class="delivery-item" id="order-courier">
+                          <span class="delivery-item__title">Курьер</span>
+                          <span class="delivery-item__description">
+                            5 авг <br>
+                            <span>300 руб.</span>
+                          </span>
+                          <input class="store_radio" type="radio" id="courier" value="courier">
+                        </label>
+                      </div>
+                      <div class="delivery__row delivery__row--single-line">
+                        <label for="boxberry-pickup" class="delivery-item">
+                          <span class="delivery-item__title">Boxberry</span>
+                          <span class="delivery-item__description">
+                            5 – 7 авг <br>
+                            <span>от 135 руб.</span>
+                          </span>
+                          <input class="store_radio" type="radio" id="boxberry-pickup" value="" checked="checked">
+                        </label>
+                        <label for="boxberry-postamat" class="delivery-item">
+                          <span class="delivery-item__title">Boxberry курьер</span>
+                          <span class="delivery-item__description">
+                            6 – 7 авг <br>
+                            <span>от 135 руб.</span>
+                          </span>
+                          <input class="store_radio" type="radio" id="boxberry-postamat" value="">
+                        </label>
+                        <label for="boxberry-courier" class="delivery-item">
+                          <span class="delivery-item__title">Почта россии</span>
+                          <span class="delivery-item__description">
+                            5 авг <br>
+                            <span>300 руб.</span>
+                          </span>
+                          <input class="store_radio" type="radio" id="boxberry-courier" value="">
+                        </label>
+                      </div>
                     </div>
                     <div class="delivery__address">
                       <span class="delivery-item__title">г. Москва, БЦ Авиамоторный, ул. Авиамоторная, дом 50 стр
