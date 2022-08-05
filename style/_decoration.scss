@@ -1,4 +1,4 @@
-.grid-decoration {
+.grid-order {
   padding-top: vw(115);
   margin-bottom: vw(162);
   height: 100%;
@@ -164,9 +164,9 @@ aside {
   font-size: 14px;
   color: #252525;
 }
-.decoration-form-control {
+.order-form-control {
   padding: 0 0 0 15px;
-  border-radius: 3px;
+  border-radius: 6px;
   font: bold 16px 'Proxima Nova', sans-serif;
 }
 
@@ -269,12 +269,13 @@ aside {
   transition: all ease-in-out 150ms;
 }
 
-.input-form {
+.input-form-select {
   margin-top: 0.375rem;
   padding-left: 20px;
   height: 45px;
   font-size: 14px;
   background: #fff;
+  border-radius: 6px;
   border: 1px solid #d2d5d9;
 }
 .order-checkout__title--h3,
@@ -286,7 +287,7 @@ aside {
   margin: 3rem 0 2rem;
   line-height: 17px;
 }
-.decoration-soa-property-container {
+.order-soa-property-container {
   margin-top: 0.375rem;
 }
 
@@ -299,9 +300,11 @@ aside {
   flex-wrap: wrap;
 }
 .input-form-time {
+  margin-top: 0.375rem;
   width: 200px;
 }
 .input-form-data {
+  margin-top: 0.375rem;
   width: 200px;
 }
 .body-wrap-scroll {
@@ -440,7 +443,7 @@ aside {
 }
 
 .order-checkout-field__field:hover {
-  border: 0.0625rem solid #b2b5b7;
+  border: 1px solid #b2b5b7;
 }
 
 .order-checkout-field__field--message {
@@ -456,8 +459,8 @@ aside {
   padding-right: 1.1875rem;
 }
 .order-checkout-field__field {
-  border: 0.0625rem solid #cccccb;
-  border-radius: 0.125rem;
+  border: 1px solid #cccccb;
+  border-radius: 6px;
   height: 3.125rem;
   font-size: 1rem;
   background: #fff;
@@ -473,10 +476,30 @@ aside {
   text-align: center;
   padding-top: 0.625rem;
 }
-.grid-decoration {
+.grid-order {
   position: relative;
 }
+
 .basket-total-block {
   position: sticky;
   top: 0;
+}
+
+.form-input {
+  margin-top: 0.375rem;
+}
+
+.delivery__address {
+  margin-right: 1.125rem;
+  padding-bottom: 0.64375rem;
+  width: 100%;
+  max-width: 29.4375rem;
+  padding-top: 13px;
+  border-radius: 0.313rem;
+  margin-bottom: 1.125rem;
+  box-shadow: 0 0 0 1px #e0e0df;
+}
+
+.hide {
+  display: none;
 }

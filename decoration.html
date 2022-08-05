@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="https://moschaitorg.ru/favicon.ico" type="image/x-icon">
+  <script src="./js/main.js" defer></script>
   <title>Backed</title>
 </head>
 
@@ -25,18 +26,17 @@
     </div>
   </section>
   <div class="container">
-    <div class="grid-decoration">
+    <div class="grid-order">
       <main>
         <div class="order-checkout__row">
           <div class="order-checkout__column order-checkout-fields">
-            <form method="post">
+            <form method="post" class="order-form__card">
               <div class="order-checkout-field--phone form__wrapper ">
                 <label for="tel" class="order-checkout-field__label ">Телефон</label>
                 <input class="form-input tel" type="tel" name="tel" id="tel" placeholder="+7(_ _ _)_ _-_ _-_ _"
                   value="">
               </div>
-            </form>
-            <form method="post">
+
               <div id="order_form_content">
                 <div class="order-checkout-field-container  ">
                   <div class="order-checkout-field-container__row order-checkout-wrapper">
@@ -69,8 +69,8 @@
                   <div class="order-checkout-field-container__row">
                     <div class="order-checkout-field order-checkout-field--100">
                       <div class="form__wrapper">
-                        <label for="email" class="order-checkout-field__label">Метод связи</label>
-                        <select class="input-form banner-icons-four" name="select" id="select">
+                        <label for="select" class="order-checkout-field__label">Метод связи</label>
+                        <select class="input-form-select banner-icons-four" name="select" id="select">
                           <option id="telephone" class="popup-option" value="telephone">Телефон
                           </option>
                           <option id="WhatsApp" class="popup-option" value="WhatsApp">WhatsApp
@@ -87,9 +87,8 @@
                     <div class="order-checkout-field order-checkout-field--100 order-checkout-field--success">
                       <div class="order-checkout-field-container__find-my-geo"></div>
                       <label class="order-checkout-field__label">Город доставки</label>
-                      <div class="decoration-soa-property-container" id="soa-property-container-7">
-                        <textarea cols="30" rows="3" name="ORDER_PROP_7" id="soa-property-7"
-                          placeholder="Адрес доставки" class="decoration-form-control">
+                      <div class="order-soa-property-container">
+                        <textarea cols="30" rows="3" placeholder="Адрес доставки" class="order-form-control">
                                       </textarea>
                       </div>
                     </div>
@@ -99,7 +98,7 @@
                   <h3 class="order-checkout__title--h3">Способ доставки</h3>
                   <div id="delivery-other" class="delivery-hide">
                     <div class="delivery__row delivery__row--single-line">
-                      <label for="pickup" class="delivery-item  delivery-item--active">
+                      <label for="pickup" class="delivery-item  delivery-item--active" id="order-pickup">
                         <span class="delivery-item__title">Самовывоз</span>
                         <span class="delivery-item__description">
                           5 – 7 авг <br>
@@ -107,7 +106,7 @@
                         </span>
                         <input class="store_radio" type="radio" id="pickup" value="pickup" checked="checked">
                       </label>
-                      <label for="postamat" class="delivery-item">
+                      <label for="postamat" class="delivery-item" id="order-postamat">
                         <span class="delivery-item__title">Постаматы</span>
                         <span class="delivery-item__description">
                           6 – 7 авг <br>
@@ -115,7 +114,7 @@
                         </span>
                         <input class="store_radio" type="radio" id="postamat" value="postamat">
                       </label>
-                      <label for="courier" class="delivery-item">
+                      <label for="courier" class="delivery-item" id="order-courier">
                         <span class="delivery-item__title">Курьер</span>
                         <span class="delivery-item__description">
                           5 авг <br>
@@ -131,7 +130,7 @@
                           5 – 7 авг <br>
                           <span>от 135 руб.</span>
                         </span>
-                        <input class="store_radio" type="radio" id="boxberry-pickup" value="pickup" checked="checked">
+                        <input class="store_radio" type="radio" id="boxberry-pickup" value="" checked="checked">
                       </label>
                       <label for="boxberry-postamat" class="delivery-item">
                         <span class="delivery-item__title">Boxberry курьер</span>
@@ -139,7 +138,7 @@
                           6 – 7 авг <br>
                           <span>от 135 руб.</span>
                         </span>
-                        <input class="store_radio" type="radio" id="boxberry-postamat" value="postamat">
+                        <input class="store_radio" type="radio" id="boxberry-postamat" value="">
                       </label>
                       <label for="boxberry-courier" class="delivery-item">
                         <span class="delivery-item__title">Почта россии</span>
@@ -147,10 +146,19 @@
                           5 авг <br>
                           <span>300 руб.</span>
                         </span>
-                        <input class="store_radio" type="radio" id="boxberry-courier" value="courier">
+                        <input class="store_radio" type="radio" id="boxberry-courier" value="">
                       </label>
                     </div>
-                    <div class="order-delivery-courier">
+                    <div class="delivery__address">
+                      <span class="delivery-item__title">г. Москва, БЦ Авиамоторный, ул. Авиамоторная, дом 50 стр
+                        1</span>
+                      <span class="delivery-item__description">Пн-Пт 10:00-21:00, Сб-Вс 10:00-18:00</span>
+                    </div>
+                    <div class="delivery__address postamates hide">
+                      <span class="delivery-item__title">г. Москва, Постаматы</span>
+                      <span class="delivery-item__description">Пн-Пт 10:00-21:00, Сб-Вс 10:00-18:00</span>
+                    </div>
+                    <div class="order-delivery-courier hide">
                       <div class="delivery-hide delivery-hide--active">
                         <div class="order-checkout-field-container">
                           <div class="order-checkout-field-container__row">
@@ -273,9 +281,10 @@
                   <p class="checkout-info-cart-item__price">1 335 ₽</p>
                 </div>
               </div>
-              <a href="./decoration.html" class="checkout-info__button">
+              <button type="submit" class="checkout-info__button">
                 Перейти к оплате <span class="checkout-info__button-arrow"></span>
-              </a>
+              </button>
+
               <p class="order-checkout-info__description">Нажимая кнопку "Перейти к оплате", вы подтверждаете
                 заказ и даете
                 согласие
