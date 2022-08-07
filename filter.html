@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="https://moschaitorg.ru/favicon.ico" type="image/x-icon">
+  <title>Backed</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="./basket-empty.html">Пустая корзина</a>
+    </div>
+
+  </header>
+  <section class="page-section">
+    <div class="container">
+      <div class="filter-wrapper">
+        <div class="filter-content__header-col">
+          <h1 class="page-title">Чай</h1>
+          <span class="filter-content__prod-qty">3806 товаров</span>
+        </div>
+        <div class="filter-checkout-field">
+          <div class="filter-input">
+            <select class="filter-input-select" name="select" id="filter-select">
+              <option id="filter-popular" class="filter-option" value="filter-popular">Популярные
+              </option>
+              <option id="filter-new-products" class="filter-option" value="filter-new-products">Новинки
+              </option>
+              <option id="filter-cheap" class="filter-option" value="filter-cheap">Сначала дешёвые
+              </option>
+              <option id="filter-expensive" class="filter-option" value="filter-expensive">Сначала дорогие
+              </option>
+              <option id="filter-discounts" class="filter-option" value="filter-discounts">По размеру скидки
+              </option>
+              <option id="filter-high-rating" class="filter-option" value="filter-high-rating">Высокий рейтинг
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="directory-content__body">
+      <div class="directory-content__body-col directory-content__nav">
+        <ul class="directory-content__nav-list">
+          <li class="directory-content__category">
+            <a href="#" class="directory-content__category-link">Каталог</a>
+
+            <ul class="directory-content__subcategories">
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Рекомендуем</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Пуэр</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Черный чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Черный чай с
+                  добавками</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Зеленый чай с
+                  добавками</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Зеленый чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Зеленый чай с
+                  жасмином</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Улун</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Красный чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Синий чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Связанный чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Желтый чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Белый чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Иван-чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Мате</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Ройбуш (ройбос)</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Экзотический
+                  чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Фруктовый чай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Фиточай</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Добавки к чаю</a>
+              </li>
+              <li class="directory-content__subcategory">
+                <a href="#" class="directory-content__subcategory-link">Чай в
+                  пакетиках</a>
+              </li>
+            </ul>
+            <span class="directory-content__subcategories-btn-hide">Свернуть</span>
+          </li>
+        </ul>
+        <div class="directory-content__filter-wrap">
+          <form action="#" name="_form" method="get" class="directory-content__filter">
+            <div class="directory-content__filter-price
+                                directory-content__filter-price_disabled">
+              <div class="directory-content__filter-name directory-content__filter-name--visible">Цена</div>
+              <div class="directory-content__filter-prices">
+                <div class="min-price price-field-wrapper">
+                  <input type="text" disabled="" name="arrFilter_MIN" value="39" maxlength="6"
+                    class="price-field price-field-min" aria-describedby="group-price-min" id="group-price-min">
+                </div>
+                <div class="max-price price-field-wrapper">
+                  <input type="tel" disabled="" name="arrFilter_MAX" value="470" maxlength="6"
+                    class="price-field price-field-max" aria-describedby="group-price-max" id="group-price-max">
+                </div>
+              </div>
+            </div>
+            <div id="f_" class="directory-content__filter-field directory-content__filter-discount">
+              <label for="1" class="directory-content__filter-label
+                                                      directory-content__filter-label--discount">
+                Со скидкой
+              </label>
+              <input type="checkbox" name="arrFilter" value="Y" id="1" class="directory-content__filter-checkbox">
+              <div class="directory-content__filter-discount-btn"></div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Ингредиенты</div>
+              <div class="directory-content__filter-dropdown">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <div class="directory-content__filter-dropdown-wrap directory-content__overflow">
+                  <div class="directory-content__filter-transform">
+                    <div id="f_100" class="directory-content__filter-field">
+                      <label for="100" class="directory-content__filter-label">барбарис</label>
+                      <input type="checkbox" name="arrFilter_100" value="Y" id="100"
+                        class="directory-content__filter-checkbox">
+
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_101" class="directory-content__filter-field">
+                      <label for="101" class="directory-content__filter-label">боярышник</label>
+                      <input type="checkbox" name="arrFilter_101" value="Y" id="101"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_102" class="directory-content__filter-field">
+                      <label for="102" class="directory-content__filter-label">брусника</label>
+                      <input type="checkbox" name="arrFilter_102" value="Y" id="102"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_103" class="directory-content__filter-field">
+                      <label for="103" class="directory-content__filter-label">бузина</label>
+                      <input type="checkbox" name="arrFilter_103" value="Y" id="103"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_104" class="directory-content__filter-field">
+                      <label for="104" class="directory-content__filter-label">вишня</label>
+                      <input type="checkbox" name="arrFilter_104" value="Y" id="104"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_105" class="directory-content__filter-field">
+                      <label for="105" class="directory-content__filter-label">годжи</label>
+                      <input type="checkbox" name="arrFilter_105" value="Y" id="105"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_106" class="directory-content__filter-field">
+                      <label for="106" class="directory-content__filter-label">ячмень побеги</label>
+                      <input type="checkbox" name="arrFilter_106" value="Y" id="106"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Чайная фабрика</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_201" class="directory-content__filter-field">
+                      <label for="201" class="directory-content__filter-label">Гу И</label>
+                      <input type="checkbox" name="arrFilter_201" value="Y" id="201"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_202" class="directory-content__filter-field">
+                      <label for="202" class="directory-content__filter-label">Куньмин</label>
+                      <input type="checkbox" name="arrFilter_202" value="Y" id="202"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_203" class="directory-content__filter-field">
+                      <label for="203" class="directory-content__filter-label">Лимин</label>
+                      <input type="checkbox" name="arrFilter_203" value="Y" id="203"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_204" class="directory-content__filter-field">
+                      <label for="204" class="directory-content__filter-label">Мэнку</label>
+                      <input type="checkbox" name="arrFilter_204" value="Y" id="204"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_205" class="directory-content__filter-field">
+                      <label for="205" class="directory-content__filter-label">Сэн Чжун</label>
+                      <input type="checkbox" name="arrFilter_205" value="Y" id="205"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_206" class="directory-content__filter-field">
+                      <label for="206" class="directory-content__filter-label">Сягуань</label>
+                      <input type="checkbox" name="arrFilter_206" value="Y" id="206"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_207" class="directory-content__filter-field">
+                      <label for="207" class="directory-content__filter-label">Тулинь</label>
+                      <input type="checkbox" name="arrFilter_207" value="Y" id="207"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_208" class="directory-content__filter-field">
+                      <label for="208" class="directory-content__filter-label">Фэн Цин</label>
+                      <input type="checkbox" name="arrFilter_208" value="Y" id="208"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_209" class="directory-content__filter-field">
+                      <label for="209" class="directory-content__filter-label">Хайвань</label>
+                      <input type="checkbox" name="arrFilter_209" value="Y" id="209"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Вес</div>
+              <div class="directory-content__filter-dropdown">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_301" class="directory-content__filter-field">
+                      <label for="301" class="directory-content__filter-label">на развес</label>
+                      <input type="checkbox" name="arrFilter_301" value="Y" id="301"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_302" class="directory-content__filter-field">
+                      <label for="302" class="directory-content__filter-label">3 г</label>
+                      <input type="checkbox" name="arrFilter_302" value="Y" id="302"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_303" class="directory-content__filter-field">
+                      <label for="303" class="directory-content__filter-label">5 г</label>
+                      <input type="checkbox" name="arrFilter_303" value="Y" id="303"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_304" class="directory-content__filter-field">
+                      <label for="304" class="directory-content__filter-label">6 г</label>
+                      <input type="checkbox" name="arrFilter_304" value="Y" id="304"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_305" class="directory-content__filter-field">
+                      <label for="305" class="directory-content__filter-label">7 г</label>
+                      <input type="checkbox" name="arrFilter_305" value="Y" id="305"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_306" class="directory-content__filter-field">
+                      <label for="306" class="directory-content__filter-label">8 г</label>
+                      <input type="checkbox" name="arrFilter_306" value="Y" id="306"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_307" class="directory-content__filter-field">
+                      <label for="307" class="directory-content__filter-label">10 г</label>
+                      <input type="checkbox" name="arrFilter_307" value="Y" id="307"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_308" class="directory-content__filter-field">
+                      <label for="308" class="directory-content__filter-label">20 г</label>
+                      <input type="checkbox" name="arrFilter_308" value="Y" id="308"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_309" class="directory-content__filter-field">
+                      <label for="309" class="directory-content__filter-label">25 г</label>
+                      <input type="checkbox" name="arrFilter_309" value="Y" id="309"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Бренд</div>
+              <div class="directory-content__filter-dropdown">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_401" class="directory-content__filter-field">
+                      <label for="401" class="directory-content__filter-label">Aguantadora</label>
+                      <input type="checkbox" name="arrFilter_401" value="Y" id="401"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_402" class="directory-content__filter-field">
+                      <label for="402" class="directory-content__filter-label">Alhild</label>
+                      <input type="checkbox" name="arrFilter_401" value="Y" id="402"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_403" class="directory-content__filter-field">
+                      <label for="403" class="directory-content__filter-label">Amanda</label>
+                      <input type="checkbox" name="arrFilter_403" value="Y" id="403"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_404" class="directory-content__filter-field">
+                      <label for="404" class="directory-content__filter-label">Andresito</label>
+                      <input type="checkbox" name="arrFilter_404" value="Y" id="404"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_405" class="directory-content__filter-field">
+                      <label for="405" class="directory-content__filter-label">Anna Park</label>
+                      <input type="checkbox" name="arrFilter_405" value="Y" id="405"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_406" class="directory-content__filter-field">
+                      <label for="406" class="directory-content__filter-label">ARAI</label>
+                      <input type="checkbox" name="arrFilter_406" value="Y" id="406"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_407" class="directory-content__filter-field">
+                      <label for="407" class="directory-content__filter-label">Arapegua</label>
+                      <input type="checkbox" name="arrFilter_407" value="Y" id="407"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_408" class="directory-content__filter-field">
+                      <label for="408" class="directory-content__filter-label">Baldo</label>
+                      <input type="checkbox" name="arrFilter_408" value="Y" id="408"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_409" class="directory-content__filter-field">
+                      <label for="409" class="directory-content__filter-label">Barao</label>
+                      <input type="checkbox" name="arrFilter_409" value="Y" id="409"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_410" class="directory-content__filter-field">
+                      <label for="410" class="directory-content__filter-label">Cachamate</label>
+                      <input type="checkbox" name="arrFilter_411" value="Y" id="410"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_411" class="directory-content__filter-field">
+                      <label for="411" class="directory-content__filter-label">Campeche</label>
+                      <input type="checkbox" name="arrFilter_412" value="Y" id="411"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_412" class="directory-content__filter-field">
+                      <label for="412" class="directory-content__filter-label">Canarias</label>
+                      <input type="checkbox" name="arrFilter_412" value="Y" id="412"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_413" class="directory-content__filter-field">
+                      <label for="413" class="directory-content__filter-label">CAYKUR</label>
+                      <input type="checkbox" name="arrFilter_413" value="Y" id="413"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_414" class="directory-content__filter-field">
+                      <label for="414" class="directory-content__filter-label">CBSe</label>
+                      <input type="checkbox" name="arrFilter_414" value="Y" id="414"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Форма выпуска</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_501" class="directory-content__filter-field">
+                      <label for="501" class="directory-content__filter-label">рассыпной</label>
+                      <input type="checkbox" name="arrFilter_501" value="Y" id="501"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_502" class="directory-content__filter-field">
+                      <label for="502" class="directory-content__filter-label">прессованный - брикет</label>
+                      <input type="checkbox" name="arrFilter_502" value="Y" id="502"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_503" class="directory-content__filter-field">
+                      <label for="503" class="directory-content__filter-label">прессованный - гриб</label>
+                      <input type="checkbox" name="arrFilter_503" value="Y" id="503"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_504" class="directory-content__filter-field">
+                      <label for="504" class="directory-content__filter-label">прессованный - лепешка </label>
+                      <input type="checkbox" name="arrFilter_504" value="Y" id="504"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_505" class="directory-content__filter-field">
+                      <label for="505" class="directory-content__filter-label">прессованный - таблетка </label>
+                      <input type="checkbox" name="505" value="Y" id="505" class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_506" class="directory-content__filter-field">
+                      <label for="506" class="directory-content__filter-label">в пакетиках</label>
+                      <input type="checkbox" name="arrFilter_506" value="Y" id="506"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_507" class="directory-content__filter-field">
+                      <label for="507" class="directory-content__filter-label">гранулированный</label>
+                      <input type="checkbox" name="arrFilter_507" value="Y" id="507"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_508" class="directory-content__filter-field">
+                      <label for="508" class="directory-content__filter-label">жидкий</label>
+                      <input type="checkbox" name="arrFilter_508" value="Y" id="508"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_509" class="directory-content__filter-field">
+                      <label for="509" class="directory-content__filter-label">молотый (порошок)</label>
+                      <input type="checkbox" name="arrFilter_509" value="Y" id="509"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_510" class="directory-content__filter-field">
+                      <label for="510" class="directory-content__filter-label">прессованный - тоу ча</label>
+                      <input type="checkbox" name="arrFilter_510" value="Y" id="510"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_511" class="directory-content__filter-field">
+                      <label for="511" class="directory-content__filter-label">связанный</label>
+                      <input type="checkbox" name="arrFilter_511" value="Y" id="511"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_512" class="directory-content__filter-field">
+                      <label for="512" class="directory-content__filter-label">смола (чагао)</label>
+                      <input type="checkbox" name="arrFilter_512" value="Y" id="512"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_513" class="directory-content__filter-field">
+                      <label for="513" class="directory-content__filter-label">растворимый</label>
+                      <input type="checkbox" name="arrFilter_513" value="Y" id="513"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_514" class="directory-content__filter-field">
+                      <label for="514" class="directory-content__filter-label">в капсулах</label>
+                      <input type="checkbox" name="arrFilter_514" value="Y" id="514"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Страна происхождения</div>
+              <div class="directory-content__filter-dropdown">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_601" class="directory-content__filter-field">
+                      <label for="601" class="directory-content__filter-label">Азербайджан</label>
+                      <input type="checkbox" name="arrFilter_47_3210050320" value="Y" id="601"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_602" class="directory-content__filter-field">
+                      <label for="602" class="directory-content__filter-label">Аргентина</label>
+                      <input type="checkbox" name="arrFilter_602" value="Y" id="602"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_603" class="directory-content__filter-field">
+                      <label for="603" class="directory-content__filter-label">Балканы</label>
+                      <input type="checkbox" name="arrFilter_603" value="Y" id="603"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_604" class="directory-content__filter-field">
+                      <label for="604" class="directory-content__filter-label">Болгария</label>
+                      <input type="checkbox" name="arrFilter_604" value="Y" id="604"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_605" class="directory-content__filter-field">
+                      <label for="605" class="directory-content__filter-label">Бразилия</label>
+                      <input type="checkbox" name="arrFilter_605" value="Y" id="605"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_606" class="directory-content__filter-field">
+                      <label for="606" class="directory-content__filter-label">Вьетнам</label>
+                      <input type="checkbox" name="arrFilter_606" value="Y" id="606"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_607" class="directory-content__filter-field">
+                      <label for="607" class="directory-content__filter-label">Германия</label>
+                      <input type="checkbox" name="arrFilter_607" value="Y" id="607"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_608" class="directory-content__filter-field">
+                      <label for="608" class="directory-content__filter-label">Грузия</label>
+                      <input type="checkbox" name="arrFilter_608" value="Y" id="608"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_609" class="directory-content__filter-field">
+                      <label for="609" class="directory-content__filter-label">Египет</label>
+                      <input type="checkbox" name="arrFilter_609" value="Y" id="609"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_610" class="directory-content__filter-field">
+                      <label for="610" class="directory-content__filter-label">Индия</label>
+                      <input type="checkbox" name="arrFilter_610" value="Y" id="610"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_611" class="directory-content__filter-field">
+                      <label for="611" class="directory-content__filter-label">Индонезия</label>
+                      <input type="checkbox" name="arrFilter_611" value="Y" id="611"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_612" class="directory-content__filter-field">
+                      <label for="612" class="directory-content__filter-label">Иран</label>
+                      <input type="checkbox" name="arrFilter_612" value="Y" id="612"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_613" class="directory-content__filter-field">
+                      <label for="613" class="directory-content__filter-label">Кения</label>
+                      <input type="checkbox" name="arrFilter_613" value="Y" id="613"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_614" class="directory-content__filter-field">
+                      <label for="614" class="directory-content__filter-label">Китай</label>
+                      <input type="checkbox" name="arrFilter_614" value="Y" id="614"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_615" class="directory-content__filter-field">
+                      <label for="615" class="directory-content__filter-label">Лаос</label>
+                      <input type="checkbox" name="arrFilter_615" value="Y" id="615"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Ароматизатор</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_701" class="directory-content__filter-field">
+                      <label for="701" class="directory-content__filter-label">без ароматизатора</label>
+                      <input type="checkbox" name="arrFilter_701" value="Y" id="701"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_702" class="directory-content__filter-field">
+                      <label for="702" class="directory-content__filter-label">с ароматизатором</label>
+                      <input type="checkbox" name="arrFilter_702" value="Y" id="702"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Выдержка пуэра</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_801" class="directory-content__filter-field">
+                      <label for="801" class="directory-content__filter-label">до 3 лет</label>
+                      <input type="checkbox" name="arrFilter_801" value="Y" id="801"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_802" class="directory-content__filter-field">
+                      <label for="802" class="directory-content__filter-label">4-5 лет</label>
+                      <input type="checkbox" name="arrFilter_802" value="Y" id="802"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_803" class="directory-content__filter-field">
+                      <label for="803" class="directory-content__filter-label">6-10 лет</label>
+                      <input type="checkbox" name="arrFilter_803" value="Y" id="803"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_804" class="directory-content__filter-field">
+                      <label for="804" class="directory-content__filter-label">более 10 лет</label>
+                      <input type="checkbox" name="arrFilter_804" value="Y" id="804"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Вид пуэра</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_901" class="directory-content__filter-field">
+                      <label for="901" class="directory-content__filter-label">Шен (зеленый)</label>
+                      <input type="checkbox" name="arrFilter_901" value="Y" id="901"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_902" class="directory-content__filter-field">
+                      <label for="902" class="directory-content__filter-label">Шу (черный)</label>
+                      <input type="checkbox" name="arrFilter_902" value="Y" id="902"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_903" class="directory-content__filter-field">
+                      <label for="903" class="directory-content__filter-label">Белый</label>
+                      <input type="checkbox" name="arrFilter_903" value="Y" id="903"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Ферментация</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_1001" class="directory-content__filter-field">
+                      <label for="1001" class="directory-content__filter-label">слабая</label>
+                      <input type="checkbox" name="arrFilter_1001" value="Y" id="1001"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_1002" class="directory-content__filter-field">
+                      <label for="1002" class="directory-content__filter-label">средняя</label>
+                      <input type="checkbox" name="arrFilter_1002" value="Y" id="1002"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_1003" class="directory-content__filter-field">
+                      <label for="1003" class="directory-content__filter-label">сильная</label>
+                      <input type="checkbox" name="arrFilter_1003" value="Y" id="1003"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Тип пакетика</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_1101" class="directory-content__filter-field">
+                      <label for="1101" class="directory-content__filter-label">Пирамидка</label>
+                      <input type="checkbox" name="arrFilter_1101" value="Y" id="1101"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_1102" class="directory-content__filter-field">
+                      <label for="1102" class="directory-content__filter-label">фильтр-пакет для чашки</label>
+                      <input type="checkbox" name="arrFilter_1102" value="Y" id="1102"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Сахар</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_1201" class="directory-content__filter-field">
+                      <label for="1201" class="directory-content__filter-label">без сахара</label>
+                      <input type="checkbox" name="arrFilter_1201" value="Y" id="1201"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                    <div id="f_1202" class="directory-content__filter-field">
+                      <label for="1202" class="directory-content__filter-label">с сахаром</label>
+                      <input type="checkbox" name="arrFilter_1202" value="Y" id="1202"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-item">
+              <div class="directory-content__filter-name">Тип капсул</div>
+              <div class="directory-content__filter-dropdown">
+                <div class="directory-content__filter-dropdown-wrap">
+                  <div>
+                    <div id="f_1301" class="directory-content__filter-field">
+                      <label for="1301" class="directory-content__filter-label">Nespresso</label>
+                      <input type="checkbox" name="arrFilter_1301" value="Y" id="1301"
+                        class="directory-content__filter-checkbox">
+                      <div class="directory-content__filter-checkbox-styled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="directory-content__filter-btns">
+              <input type="hidden" name="set_filter" value="Y"
+                class="directory-content__filter-btn filter-btn-submit"><button
+                class="directory-content__filter-btn filter-btn-submit" type="submit">Применить</button>
+              <a href="#" class="directory-content__filter-btn filter-btn-reset">Сбросить
+                фильтры</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="directory-content__body-col directory-content__products card-container">
+
+        <div class="product-card
+          directory-content__product
+          product-card-discount">
+          <span class="product-card__add-fav"></span>
+          <div class="product-card__labels">
+            <span class="product-card__label product-card__label--hit">Хит</span>
+            <span class="product-card__label product-card__label--rec">Рекомендуем</span>
+            <span class="product-card__label product-card__label--discount-detail">-25%</span>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__info-top  directory-content__product-info-top">
+              <div class="product-card__img-wrap">
+                <a href="#" title="Чай черный Эрл Грей">
+                  <img class="product-card__img" src="./assets/img/tea-2.webp" alt="Чай черный Эрл Грей"></a>
+              </div>
+            </div>
+            <div class="product-card__info-bottom">
+              <a href="#">
+                <span class="product-card__category">ЧАЙ</span>
+                <p class="product-card__name" style="overflow-wrap: break-word;">Чай черный Эрл Грей
+                </p>
+              </a>
+
+              <div class="box">
+                <div class="product-card__prices">
+                  <span class="product-card__current-price cur"><span>147</span> ₽</span>
+                  <span class="product-card__old-price">197 ₽</span>
+                </div>
+
+                <div class="weight">
+                  <div class="weight-title">100 грамм</div>
+                  <ul>
+                    <li data-id="9972" class="active">100 грамм</li>
+                    <li data-id="9495">500 грамм</li>
+                    <li data-id="9496">1000 грамм</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__info-buy">
+            <div class="directory-tooltip plus">Сейчас в наличии только 500 г.<br>Узнать о поступлении можно по телефону
+              или в
+              чате.</div>
+            <div class="product-card__calculus">
+              <div class="product-card__calculus-btn product-card__calculus-btn--plus"></div>
+              <div class="product-card__calculus-result">
+                <span class="product-card__calculus-value">50</span>
+                <span class="product-card__calculus-unit">г</span>
+              </div>
+              <div class="product-card__calculus-btn product-card__calculus-btn--minus min">
+              </div>
+            </div>
+            <a class="product-card__btn-add" href="/product/erl-grey/#buy">В
+              корзину</a>
+          </div>
+        </div>
+
+        <div class="product-card
+          directory-content__product
+          product-card-discount">
+          <span class="product-card__add-fav"></span>
+          <div class="product-card__labels">
+            <span class="product-card__label product-card__label--hit">Хит</span>
+            <span class="product-card__label product-card__label--rec">Рекомендуем</span>
+            <span class="product-card__label product-card__label--discount-detail">-25%</span>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__info-top  directory-content__product-info-top">
+              <div class="product-card__img-wrap">
+                <a href="#" title="Чай черный Эрл Грей">
+                  <img class="product-card__img" src="./assets/img/tea-2.webp" alt="Чай черный Эрл Грей"></a>
+              </div>
+            </div>
+            <div class="product-card__info-bottom">
+              <a href="#">
+                <span class="product-card__category">ЧАЙ</span>
+                <p class="product-card__name" style="overflow-wrap: break-word;">Чай черный Эрл Грей
+                </p>
+              </a>
+
+              <div class="box">
+                <div class="product-card__prices">
+                  <span class="product-card__current-price cur"><span>147</span> ₽</span>
+                  <span class="product-card__old-price">197 ₽</span>
+                </div>
+
+                <div class="weight">
+                  <div class="weight-title">100 грамм</div>
+                  <ul>
+                    <li data-id="9972" class="active">100 грамм</li>
+                    <li data-id="9495">500 грамм</li>
+                    <li data-id="9496">1000 грамм</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__info-buy">
+            <div class="directory-tooltip plus">Сейчас в наличии только 500 г.<br>Узнать о поступлении можно по телефону
+              или в
+              чате.</div>
+            <div class="product-card__calculus">
+              <div class="product-card__calculus-btn product-card__calculus-btn--plus"></div>
+              <div class="product-card__calculus-result">
+                <span class="product-card__calculus-value">50</span>
+                <span class="product-card__calculus-unit">г</span>
+              </div>
+              <div class="product-card__calculus-btn product-card__calculus-btn--minus min">
+              </div>
+            </div>
+            <a class="product-card__btn-add" href="/product/erl-grey/#buy">В
+              корзину</a>
+          </div>
+        </div>
+
+        <div class="product-card
+          directory-content__product
+          product-card-discount">
+          <span class="product-card__add-fav"></span>
+          <div class="product-card__labels">
+            <span class="product-card__label product-card__label--hit">Хит</span>
+            <span class="product-card__label product-card__label--rec">Рекомендуем</span>
+            <span class="product-card__label product-card__label--discount-detail">-25%</span>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__info-top  directory-content__product-info-top">
+              <div class="product-card__img-wrap">
+                <a href="#" title="Чай черный Эрл Грей">
+                  <img class="product-card__img" src="./assets/img/tea-2.webp" alt="Чай черный Эрл Грей"></a>
+              </div>
+            </div>
+            <div class="product-card__info-bottom">
+              <a href="#">
+                <span class="product-card__category">ЧАЙ</span>
+                <p class="product-card__name" style="overflow-wrap: break-word;">Чай черный Эрл Грей
+                </p>
+              </a>
+
+              <div class="box">
+                <div class="product-card__prices">
+                  <span class="product-card__current-price cur"><span>147</span> ₽</span>
+                  <span class="product-card__old-price">197 ₽</span>
+                </div>
+
+                <div class="weight">
+                  <div class="weight-title">100 грамм</div>
+                  <ul>
+                    <li data-id="9972" class="active">100 грамм</li>
+                    <li data-id="9495">500 грамм</li>
+                    <li data-id="9496">1000 грамм</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__info-buy">
+            <div class="directory-tooltip plus">Сейчас в наличии только 500 г.<br>Узнать о поступлении можно по телефону
+              или в
+              чате.</div>
+            <div class="product-card__calculus">
+              <div class="product-card__calculus-btn product-card__calculus-btn--plus"></div>
+              <div class="product-card__calculus-result">
+                <span class="product-card__calculus-value">50</span>
+                <span class="product-card__calculus-unit">г</span>
+              </div>
+              <div class="product-card__calculus-btn product-card__calculus-btn--minus min">
+              </div>
+            </div>
+            <a class="product-card__btn-add" href="/product/erl-grey/#buy">В
+              корзину</a>
+          </div>
+        </div>
+
+        <div class="product-card
+          directory-content__product
+          product-card-discount">
+          <span class="product-card__add-fav"></span>
+          <div class="product-card__labels">
+            <span class="product-card__label product-card__label--hit">Хит</span>
+            <span class="product-card__label product-card__label--rec">Рекомендуем</span>
+            <span class="product-card__label product-card__label--discount-detail">-25%</span>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__info-top  directory-content__product-info-top">
+              <div class="product-card__img-wrap">
+                <a href="#" title="Чай черный Эрл Грей">
+                  <img class="product-card__img" src="./assets/img/tea-2.webp" alt="Чай черный Эрл Грей"></a>
+              </div>
+            </div>
+            <div class="product-card__info-bottom">
+              <a href="#">
+                <span class="product-card__category">ЧАЙ</span>
+                <p class="product-card__name" style="overflow-wrap: break-word;">Чай черный Эрл Грей
+                </p>
+              </a>
+
+              <div class="box">
+                <div class="product-card__prices">
+                  <span class="product-card__current-price cur"><span>147</span> ₽</span>
+                  <span class="product-card__old-price">197 ₽</span>
+                </div>
+
+                <div class="weight">
+                  <div class="weight-title">100 грамм</div>
+                  <ul>
+                    <li data-id="9972" class="active">100 грамм</li>
+                    <li data-id="9495">500 грамм</li>
+                    <li data-id="9496">1000 грамм</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__info-buy">
+            <div class="directory-tooltip plus">Сейчас в наличии только 500 г.<br>Узнать о поступлении можно по телефону
+              или в
+              чате.</div>
+            <div class="product-card__calculus">
+              <div class="product-card__calculus-btn product-card__calculus-btn--plus"></div>
+              <div class="product-card__calculus-result">
+                <span class="product-card__calculus-value">50</span>
+                <span class="product-card__calculus-unit">г</span>
+              </div>
+              <div class="product-card__calculus-btn product-card__calculus-btn--minus min">
+              </div>
+            </div>
+            <a class="product-card__btn-add" href="/product/erl-grey/#buy">В
+              корзину</a>
+          </div>
+        </div>
+
+        <div class="product-card
+          directory-content__product
+          product-card-discount">
+          <span class="product-card__add-fav"></span>
+          <div class="product-card__labels">
+            <span class="product-card__label product-card__label--hit">Хит</span>
+            <span class="product-card__label product-card__label--rec">Рекомендуем</span>
+            <span class="product-card__label product-card__label--discount-detail">-25%</span>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__info-top  directory-content__product-info-top">
+              <div class="product-card__img-wrap">
+                <a href="#" title="Чай черный Эрл Грей">
+                  <img class="product-card__img" src="./assets/img/tea-2.webp" alt="Чай черный Эрл Грей"></a>
+              </div>
+            </div>
+            <div class="product-card__info-bottom">
+              <a href="#">
+                <span class="product-card__category">ЧАЙ</span>
+                <p class="product-card__name" style="overflow-wrap: break-word;">Чай черный Эрл Грей
+                </p>
+              </a>
+
+              <div class="box">
+                <div class="product-card__prices">
+                  <span class="product-card__current-price cur"><span>147</span> ₽</span>
+                  <span class="product-card__old-price">197 ₽</span>
+                </div>
+
+                <div class="weight">
+                  <div class="weight-title">100 грамм</div>
+                  <ul>
+                    <li data-id="9972" class="active">100 грамм</li>
+                    <li data-id="9495">500 грамм</li>
+                    <li data-id="9496">1000 грамм</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__info-buy">
+            <div class="directory-tooltip plus">Сейчас в наличии только 500 г.<br>Узнать о поступлении можно по телефону
+              или в
+              чате.</div>
+            <div class="product-card__calculus">
+              <div class="product-card__calculus-btn product-card__calculus-btn--plus"></div>
+              <div class="product-card__calculus-result">
+                <span class="product-card__calculus-value">50</span>
+                <span class="product-card__calculus-unit">г</span>
+              </div>
+              <div class="product-card__calculus-btn product-card__calculus-btn--minus min">
+              </div>
+            </div>
+            <a class="product-card__btn-add" href="/product/erl-grey/#buy">В
+              корзину</a>
+          </div>
+        </div>
+
+        <div class="product-card
+          directory-content__product
+          product-card-discount">
+          <span class="product-card__add-fav"></span>
+          <div class="product-card__labels">
+            <span class="product-card__label product-card__label--hit">Хит</span>
+            <span class="product-card__label product-card__label--rec">Рекомендуем</span>
+            <span class="product-card__label product-card__label--discount-detail">-25%</span>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__info-top  directory-content__product-info-top">
+              <div class="product-card__img-wrap">
+                <a href="#" title="Чай черный Эрл Грей">
+                  <img class="product-card__img" src="./assets/img/tea-2.webp" alt="Чай черный Эрл Грей"></a>
+              </div>
+            </div>
+            <div class="product-card__info-bottom">
+              <a href="#">
+                <span class="product-card__category">ЧАЙ</span>
+                <p class="product-card__name" style="overflow-wrap: break-word;">Чай черный Эрл Грей
+                </p>
+              </a>
+
+              <div class="box">
+                <div class="product-card__prices">
+                  <span class="product-card__current-price cur"><span>147</span> ₽</span>
+                  <span class="product-card__old-price">197 ₽</span>
+                </div>
+
+                <div class="weight">
+                  <div class="weight-title">100 грамм</div>
+                  <ul>
+                    <li data-id="9972" class="active">100 грамм</li>
+                    <li data-id="9495">500 грамм</li>
+                    <li data-id="9496">1000 грамм</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__info-buy">
+            <div class="directory-tooltip plus">Сейчас в наличии только 500 г.<br>Узнать о поступлении можно по телефону
+              или в
+              чате.</div>
+            <div class="product-card__calculus">
+              <div class="product-card__calculus-btn product-card__calculus-btn--plus"></div>
+              <div class="product-card__calculus-result">
+                <span class="product-card__calculus-value">50</span>
+                <span class="product-card__calculus-unit">г</span>
+              </div>
+              <div class="product-card__calculus-btn product-card__calculus-btn--minus min">
+              </div>
+            </div>
+            <a class="product-card__btn-add" href="/product/erl-grey/#buy">В
+              корзину</a>
+          </div>
+        </div>
+
+
+
+        <div class="pagination pagination-directory">
+          <span class="pagination-btn pagination-prev disabled"></span>
+          <span class="modern-page-first modern-page-last pagination-links active">1</span>
+
+          <span class="pagination-btn pagination-next disabled"></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+</body>
+
+</html>
