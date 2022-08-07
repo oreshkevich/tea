@@ -1,0 +1,76 @@
+@media (max-width: 1100px) {
+  .product-card__btn-add,
+  .product-card__btn-not-available {
+    position: relative;
+    width: 48px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 13px;
+    border-radius: 4px;
+    background-color: #a1c656;
+    background-image: url(./../assets/svg/basket-1.svg);
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .product-card__label {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .product-card__label--hit {
+    background-color: #ffd12d;
+    background-image: url(./../assets/svg/fire.svg);
+  }
+  .product-card__label--rec {
+    background-color: #256efa;
+    background-image: url(./../assets/svg/like.svg);
+  }
+  .product-card__label--discount-detail {
+    margin-top: 0;
+    background-color: #f92d2d;
+    font-size: 10px;
+    padding: 8px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 985px) {
+  .directory-content__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .directory-content__nav {
+    width: 100%;
+  }
+
+  .directory-content__product {
+    width: calc((100% - 90px) / 2);
+  }
+  .directory-content__filter-wrap {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 491px) {
+  .directory-content__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .directory-content__nav {
+    width: 100%;
+  }
+
+  .directory-content__product {
+    width: calc((100% - 10px) / 1);
+    margin: 0 0px 6px 0;
+  }
+}

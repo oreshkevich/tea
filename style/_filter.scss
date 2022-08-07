@@ -116,7 +116,7 @@ aside {
 }
 
 .directory-content__subcategories-btn-hide {
-  color: #2fac66;
+  color: #a1c656;
 }
 .directory-content__subcategories-btn-hide:hover {
   color: #1f8b4f;
@@ -511,13 +511,13 @@ textarea:active {
 
 .filter-btn-submit {
   color: #fff;
-  background-color: #2fac66;
+  background-color: #a1c656;
 }
 .directory-content__filter-btn {
   width: calc(50% - 6px);
   box-sizing: border-box;
   padding: 14px;
-  border: 2px solid #2fac66;
+  border: 2px solid #a1c656;
   border-radius: 4px;
   text-align: center;
   font-family: inherit;
@@ -533,7 +533,7 @@ textarea:active {
   line-height: 130%;
 }
 .filter-btn-reset {
-  color: #2fac66;
+  color: #a1c656;
 }
 
 .directory-content__filter-btns {
@@ -596,7 +596,7 @@ textarea:active {
   color: #f92d2d;
 }
 .product-card__label--rec {
-  background: #2fac66;
+  background: #a1c656;
 }
 .product-card__label {
   margin-bottom: 8px;
@@ -724,7 +724,7 @@ textarea:active {
   box-sizing: border-box;
   padding: 13px;
   border-radius: 4px;
-  background-color: #2fac66;
+  background-color: #a1c656;
 
   background-position: center;
   background-size: 24px;
@@ -745,7 +745,7 @@ textarea:active {
 }
 .product-card__btn-add,
 .directory-content__header-tag:hover {
-  background-color: #2fac66;
+  background-color: #a1c656;
   color: #fff;
 }
 .product-card__calculus {
@@ -773,7 +773,7 @@ textarea:active {
 }
 .product-card__calculus-btn--minus {
   left: 0;
-  background-image: url(./../assets/svg/minus-add.svg);
+  background-image: url(./../assets/svg/minus-a.svg);
   background-position: center left 8px;
 }
 .product-card__calculus-btn {
@@ -801,11 +801,7 @@ textarea:active {
 .filter-btn-submit {
   color: #fff !important;
 }
-.product-card__btn-add,
-.product-card__btn-add,
-.product-card__btn-not-available {
-  height: 48px;
-}
+
 .product-card__btn-not-available {
   width: 106px;
   font-weight: 700;
@@ -819,17 +815,7 @@ textarea:active {
   padding-bottom: 0;
   margin-bottom: 8px;
 }
-.directory-content__products {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 48px;
-}
-.directory-content__products {
-  margin-right: -20px;
-  flex-grow: 1;
-  margin-bottom: 0;
-}
+
 .directory-content__product {
   width: calc((100% - 90px) / 3);
   box-sizing: border-box;
@@ -872,8 +858,7 @@ textarea:active {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #2fac66;
-
+  background-color: #a1c656;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -896,7 +881,7 @@ textarea:active {
   position: relative;
   z-index: 1;
   background: #e6f5eb;
-  border-color: #2fac66;
+  border-color: #a1c656;
 }
 .pagination-links.modern-page-last {
   border-radius: 0px 4px 4px 0px !important;
