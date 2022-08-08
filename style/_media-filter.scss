@@ -1,4 +1,13 @@
 @media (max-width: 1100px) {
+  .directory-content__product {
+    width: calc((100% - 90px) / 2);
+  }
+}
+
+@media (max-width: 900px) {
+  .mob-catalog-content__filter {
+    display: flex;
+  }
   .product-card__btn-add,
   .product-card__btn-not-available {
     position: relative;
@@ -42,9 +51,7 @@
     padding: 8px 0;
     text-align: center;
   }
-}
 
-@media (max-width: 985px) {
   .directory-content__body {
     display: flex;
     flex-direction: column;
@@ -53,9 +60,6 @@
     width: 100%;
   }
 
-  .directory-content__product {
-    width: calc((100% - 90px) / 2);
-  }
   .directory-content__filter-wrap {
     padding-bottom: 10px;
   }

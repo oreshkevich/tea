@@ -964,7 +964,7 @@ textarea:active {
 }
 
 .mob-catalog-content__filter {
-  display: flex;
+  display: none;
   justify-content: center;
   text-align: center;
   margin-bottom: 20px;
@@ -987,4 +987,12 @@ textarea:active {
 
 .hide {
   display: none;
+}
+
+.feature__link_active {
+  background-image: url(./../assets/svg/arrow-close.svg);
+}
+
+.hidden {
+  display: none !important;
 }
