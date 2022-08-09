@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="https://moschaitorg.ru/favicon.ico" type="image/x-icon">
+  <script src="./js/modal.js" defer></script>
   <title>Backed</title>
 </head>
 
@@ -133,6 +134,10 @@
                   <p class="checkout-info-cart-item__name">Накопительная скидка</p>
                   <p class="checkout-info-cart-item__price">0 %</p>
                 </div>
+                <div class="checkout-info-cart-item">
+                  <p class="checkout-info-cart-item__name">Промкод</p>
+                  <p class="checkout-info-cart-item__price">10 %</p>
+                </div>
                 <div class="checkout-info-cart__stars"></div>
                 <div class="checkout-info-cart-item discount ">
                   <a class="checkout-info-cart-item__name">Итого</a>
@@ -143,12 +148,51 @@
                 Перейти к оформлению <span class="checkout-info__button-arrow"></span>
               </a>
               <div class="checkout-info__links">
-                <a href="#" class="checkout-info__link">Купить в 1 клик</a>
+                <a href="#" class="checkout-info__link">Хочу образцы</a>
+              </div>
+              <div class="checkout-info__links">
+                <button class="checkout-info__link more">
+                  Купить в 1 клик
+                </button>
               </div>
             </div>
           </div>
         </div>
       </aside>
+    </div>
+  </div>
+
+
+  <div class="modal one-click hidden">
+    <div class="modal__body login__body">
+      <div class="modal__header login__header">
+        <p class="h2 modal__titles login__title">
+          <button class="modal__btn-close modal__close"></button>
+        </p>
+      </div>
+      <div class="modal__main login__main">
+        <div>
+          <form class="login__form certificate__form login__form--empty" id="buy-sert-form" name="buy-sert"
+            method="post" action="">
+            <div class="login__form--empty login__form-field login__form--margin">
+              <input type="text" minlength="3" maxlength="15" value="" class="input__border " required=""
+                placeholder="Имя">
+            </div>
+            <div class="login__form-field login__form-phone">
+              <div class="region-selector">
+                <div>
+                  <input type="tel" name="phone" value="" inputmode="tel" required="" placeholder="+7 ___ ___-__-__">
+                </div>
+                <button class="login__from-btn-reset"></button>
+              </div>
+            </div>
+            <input class="login__form-submit" type="submit" value="Отправить">
+            <p>
+              Наш менеджер перезвонит Вам в течение 15 минут
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
   <footer></footer>
