@@ -127,11 +127,6 @@
   line-height: 100%;
 }
 
-.login__form--empty .login__form-submit {
-  pointer-events: none;
-  cursor: default;
-}
-
 .login__form {
   display: flex;
   flex-direction: column;
