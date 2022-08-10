@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="https://moschaitorg.ru/favicon.ico" type="image/x-icon">
   <script src="./js/filter.js" defer></script>
+  <script src="./js/search.js" defer></script>
   <title>Backed</title>
 </head>
 
@@ -164,48 +165,49 @@
             <div class="directory-content__filter-item">
               <div class="directory-content__filter-name">Ингредиенты</div>
               <div class="directory-content__filter-dropdown">
-                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search"
+                  id="search-ingredients">
                 <div class="directory-content__filter-dropdown-wrap directory-content__overflow">
-                  <div class="directory-content__filter-transform">
-                    <div id="f_100" class="directory-content__filter-field">
+                  <div class="directory-content__filter-transform" id="list-ingredients">
+                    <div id="f_100" class="directory-content__filter-field  ">
                       <label for="100" class="directory-content__filter-label">барбарис</label>
                       <input type="checkbox" name="arrFilter_100" value="Y" id="100"
                         class="directory-content__filter-checkbox">
 
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_101" class="directory-content__filter-field">
+                    <div id="f_101" class="directory-content__filter-field ">
                       <label for="101" class="directory-content__filter-label">боярышник</label>
                       <input type="checkbox" name="arrFilter_101" value="Y" id="101"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_102" class="directory-content__filter-field">
+                    <div id="f_102" class="directory-content__filter-field ">
                       <label for="102" class="directory-content__filter-label">брусника</label>
                       <input type="checkbox" name="arrFilter_102" value="Y" id="102"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_103" class="directory-content__filter-field">
+                    <div id="f_103" class="directory-content__filter-field ">
                       <label for="103" class="directory-content__filter-label">бузина</label>
                       <input type="checkbox" name="arrFilter_103" value="Y" id="103"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_104" class="directory-content__filter-field">
+                    <div id="f_104" class="directory-content__filter-field ">
                       <label for="104" class="directory-content__filter-label">вишня</label>
                       <input type="checkbox" name="arrFilter_104" value="Y" id="104"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_105" class="directory-content__filter-field">
+                    <div id="f_105" class="directory-content__filter-field ">
                       <label for="105" class="directory-content__filter-label">годжи</label>
                       <input type="checkbox" name="arrFilter_105" value="Y" id="105"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_106" class="directory-content__filter-field">
-                      <label for="106" class="directory-content__filter-label">ячмень побеги</label>
+                    <div id="f_106" class="directory-content__filter-field ">
+                      <label for="106" class="directory-content__filter-label ">ячмень побеги</label>
                       <input type="checkbox" name="arrFilter_106" value="Y" id="106"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
@@ -281,58 +283,58 @@
             <div class="directory-content__filter-item">
               <div class="directory-content__filter-name">Вес</div>
               <div class="directory-content__filter-dropdown">
-                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search" id="search-input">
                 <div class="directory-content__filter-dropdown-wrap">
-                  <div>
-                    <div id="f_301" class="directory-content__filter-field">
+                  <div id="list">
+                    <div id="f_301" class="directory-content__filter-field ">
                       <label for="301" class="directory-content__filter-label">на развес</label>
                       <input type="checkbox" name="arrFilter_301" value="Y" id="301"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_302" class="directory-content__filter-field">
+                    <div id="f_302" class="directory-content__filter-field ">
                       <label for="302" class="directory-content__filter-label">3 </label>
                       <input type="checkbox" name="arrFilter_302" value="Y" id="302"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_303" class="directory-content__filter-field">
+                    <div id="f_303" class="directory-content__filter-field ">
                       <label for="303" class="directory-content__filter-label">5 </label>
                       <input type="checkbox" name="arrFilter_303" value="Y" id="303"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_304" class="directory-content__filter-field">
+                    <div id="f_304" class="directory-content__filter-field ">
                       <label for="304" class="directory-content__filter-label">6 </label>
                       <input type="checkbox" name="arrFilter_304" value="Y" id="304"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_305" class="directory-content__filter-field">
+                    <div id="f_305" class="directory-content__filter-field ">
                       <label for="305" class="directory-content__filter-label">7 </label>
                       <input type="checkbox" name="arrFilter_305" value="Y" id="305"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_306" class="directory-content__filter-field">
+                    <div id="f_306" class="directory-content__filter-field ">
                       <label for="306" class="directory-content__filter-label">8 </label>
                       <input type="checkbox" name="arrFilter_306" value="Y" id="306"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_307" class="directory-content__filter-field">
+                    <div id="f_307" class="directory-content__filter-field ">
                       <label for="307" class="directory-content__filter-label">10 </label>
                       <input type="checkbox" name="arrFilter_307" value="Y" id="307"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_308" class="directory-content__filter-field">
+                    <div id="f_308" class="directory-content__filter-field ">
                       <label for="308" class="directory-content__filter-label">20 </label>
                       <input type="checkbox" name="arrFilter_308" value="Y" id="308"
                         class="directory-content__filter-checkbox">
                       <div class="directory-content__filter-checkbox-styled"></div>
                     </div>
-                    <div id="f_309" class="directory-content__filter-field">
+                    <div id="f_309" class="directory-content__filter-field ">
                       <label for="309" class="directory-content__filter-label">25 </label>
                       <input type="checkbox" name="arrFilter_309" value="Y" id="309"
                         class="directory-content__filter-checkbox">
@@ -340,14 +342,15 @@
                     </div>
                   </div>
                 </div>
+                <div class="js-filter-search-empty">Не найдено</div>
               </div>
             </div>
             <div class="directory-content__filter-item">
               <div class="directory-content__filter-name">Бренд</div>
               <div class="directory-content__filter-dropdown">
-                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search" id="search-brand">
                 <div class="directory-content__filter-dropdown-wrap">
-                  <div>
+                  <div id="list-brand">
                     <div id="f_401" class="directory-content__filter-field">
                       <label for="401" class="directory-content__filter-label">Aguantadora</label>
                       <input type="checkbox" name="arrFilter_401" value="Y" id="401"
@@ -531,9 +534,9 @@
             <div class="directory-content__filter-item">
               <div class="directory-content__filter-name">Страна происхождения</div>
               <div class="directory-content__filter-dropdown">
-                <input type="search" placeholder="Найти" class="directory-content__filter-search">
+                <input type="search" placeholder="Найти" class="directory-content__filter-search" id="search-country">
                 <div class="directory-content__filter-dropdown-wrap">
-                  <div>
+                  <div id="list-country">
                     <div id="f_601" class="directory-content__filter-field">
                       <label for="601" class="directory-content__filter-label">Азербайджан</label>
                       <input type="checkbox" name="arrFilter_47_3210050320" value="Y" id="601"
