@@ -44,5 +44,12 @@ function filter() {
   }
 
   btnExpand.addEventListener('click', toggleVisibilityExpand);
+  function functionName() {
+    if (document.documentElement.clientWidth < 900) {
+      directoryContent.classList.add('hide');
+    }
+  }
+  window.onload = functionName;
+  window.onresize = functionName;
 }
 filter();
