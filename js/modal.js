@@ -23,6 +23,7 @@ function promoCode() {
   promoCodeBtn.addEventListener('click', () => {
     const discount = basketCouponInput.value.trim().toLowerCase();
     if (discount == 'скидка') checkoutInfo.classList.remove('hidden');
+    basketCouponInput.value = '';
   });
 }
 promoCode();
