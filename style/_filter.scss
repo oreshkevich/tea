@@ -693,50 +693,50 @@ textarea:active {
   background-color: #a1c656;
   color: #fff;
 }
-.product-card__calculus {
-  padding: 12px 28px;
-  height: 48px;
-}
-.product-card__calculus {
-  margin-right: 10px;
-}
+// .product-card__calculus {
+//   padding: 12px 28px;
+//   height: 48px;
+// }
+// .product-card__calculus {
+//   margin-right: 10px;
+// }
 
-.product-card__calculus {
-  position: relative;
-  height: 40px;
-  flex-grow: 1;
-  box-sizing: border-box;
-  padding: 10px 20px;
-  margin-right: 5px;
-  border: 1px solid #d2d5d9;
-  border-radius: 4px;
-}
-.product-card__calculus-btn--plus {
-  right: 0;
-  background-image: url(./../assets/svg/plus-add.svg);
-  background-position: center right 8px;
-}
-.product-card__calculus-btn--minus {
-  left: 0;
-  background-image: url(./../assets/svg/minus-a.svg);
-  background-position: center left 8px;
-}
-.product-card__calculus-btn {
-  position: absolute;
-  top: 0;
-  width: 28px;
-  height: 100%;
-  background-size: 16px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-.product-card__calculus-result {
-  text-align: center;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 145%;
-  color: #212121;
-}
+// .product-card__calculus {
+//   position: relative;
+//   height: 40px;
+//   flex-grow: 1;
+//   box-sizing: border-box;
+//   padding: 10px 20px;
+//   margin-right: 5px;
+//   border: 1px solid #d2d5d9;
+//   border-radius: 4px;
+// }
+// .product-card__calculus-btn--plus {
+//   right: 0;
+//   background-image: url(./../assets/svg/plus-add.svg);
+//   background-position: center right 8px;
+// }
+// .product-card__calculus-btn--minus {
+//   left: 0;
+//   background-image: url(./../assets/svg/minus-a.svg);
+//   background-position: center left 8px;
+// }
+// .product-card__calculus-btn {
+//   position: absolute;
+//   top: 0;
+//   width: 28px;
+//   height: 100%;
+//   background-size: 16px;
+//   background-repeat: no-repeat;
+//   cursor: pointer;
+// }
+// .product-card__calculus-result {
+//   text-align: center;
+//   font-weight: 500;
+//   font-size: 12px;
+//   line-height: 145%;
+//   color: #212121;
+// }
 .product-card {
   position: relative;
 }
@@ -803,6 +803,7 @@ textarea:active {
   width: 48px;
   height: 48px;
   border-radius: 100%;
+  background-image: url(./../assets/svg/right-arrow.svg);
   background-color: #a1c656;
   background-repeat: no-repeat;
   background-position: center;
@@ -830,6 +831,9 @@ textarea:active {
 }
 .pagination-links.modern-page-last {
   border-radius: 0px 4px 4px 0px !important;
+}
+.pagination-links.modern-page-first {
+  border-radius: 4px 0 0 4px !important;
 }
 .pagination-next {
   margin-left: 16px;
