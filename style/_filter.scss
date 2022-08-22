@@ -961,3 +961,43 @@ textarea:active {
   line-height: 130%;
   color: #212121;
 }
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 35px;
+  background: #f0f1e9;
+  font-size: 18px;
+  position: relative;
+  height: 40px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border: 1px solid #d2d5d9;
+  border-radius: 4px;
+}
+
+.quantity button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  line-height: 19px;
+  color: #0e4906;
+  font-size: 22px;
+}
+.quantity input {
+  width: 45px;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 9px 10px;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+}
