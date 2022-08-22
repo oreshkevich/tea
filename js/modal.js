@@ -14,3 +14,15 @@ function modal() {
   });
 }
 modal();
+
+function promoCode() {
+  const promoCodeBtn = document.querySelector('.promocode__btn');
+  const checkoutInfo = document.getElementById('promo-code');
+  const basketCouponInput = document.getElementById('basket-coupon-input');
+
+  promoCodeBtn.addEventListener('click', () => {
+    const discount = basketCouponInput.value.trim().toLowerCase();
+    if (discount == 'скидка') checkoutInfo.classList.remove('hidden');
+  });
+}
+promoCode();

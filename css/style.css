@@ -2545,6 +2545,14 @@ textarea:active {
   display: none !important;
 }
 
+.js-filter-search-empty {
+  display: none;
+  padding: 0 0 0 14px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #212121;
+}
+
 .overlay {
   position: absolute;
   top: 0;
