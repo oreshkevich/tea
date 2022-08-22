@@ -32,6 +32,10 @@
     margin-right: 16px;
     width: calc(45% - 0.5625rem);
   }
+  .delivery-price__row .delivery-item {
+    margin-right: 16px;
+    width: calc(100% - 0.5625rem);
+  }
   .order-checkout-field__field {
     margin-top: 0.3125rem;
     padding-left: 0.5rem;

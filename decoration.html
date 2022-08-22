@@ -94,11 +94,23 @@
                     </div>
                   </div>
                 </div>
+                <div class="order-checkout-field-container">
+                  <h3 class="order-checkout__title--delivery">Регион доставки</h3>
+                  <div class="delivery__form-group">
+                    <label class="delivery__custom-label"><span class="delivery__star">*</span>
+                      Местоположение</label>
+                    <span class="delivery__link-container">
+                      <span>
+                        <a href="#" class="delivery__link-order">Москва</a>
+                      </span>
+                    </span>
+                  </div>
+                </div>
                 <div class="delivery">
                   <h3 class="order-checkout__title--h3">Способ доставки</h3>
                   <div id="delivery-other" class="delivery-hide">
                     <div class="delivery-hide order-form__card">
-                      <div class="delivery__row delivery__row--single-line">
+                      <div class="delivery__row">
                         <label for="pickup" class="delivery-item  delivery-item--active" id="order-pickup">
                           <span class="delivery-item__title">Самовывоз</span>
                           <span class="delivery-item__description">
@@ -123,8 +135,6 @@
                           </span>
                           <input class="store_radio" type="radio" id="courier" value="courier">
                         </label>
-                      </div>
-                      <div class="delivery__row delivery__row--single-line">
                         <label for="boxberry-pickup" class="delivery-item">
                           <span class="delivery-item__title">Boxberry</span>
                           <span class="delivery-item__description">
@@ -148,6 +158,16 @@
                             <span>300 руб.</span>
                           </span>
                           <input class="store_radio" type="radio" id="boxberry-courier" value="">
+                        </label>
+                        <label for="boxberry-courier" class="delivery-item">
+                          <span class="delivery-item__title">Доставка Via.Delivery</span>
+                          <span class="delivery-item__description">
+                            1-6 дней <br>
+                            <span>от 143 руб. до 187 руб.</span>
+                          </span>
+                          <input class="store_radio" type="radio" id="boxberry-courier" value="">
+                          <input type="button" class="delivery-item__button" value="Выбрать пункт самовывоза">
+
                         </label>
                       </div>
                     </div>
