@@ -53,3 +53,15 @@ function filter() {
   window.onresize = functionName;
 }
 filter();
+
+const cartToys = () => {
+  const goodsWrapper = document.querySelector('.card-container');
+
+  goodsWrapper.addEventListener('click', (event) => {
+    if (event.target.classList.contains('product-card__btn-add')) {
+      event.target.textContent = 'В корзине';
+      event.target.classList.add('active-card');
+    }
+  });
+};
+cartToys();

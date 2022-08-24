@@ -1005,3 +1005,10 @@ textarea:active {
   color: #000000;
   font-weight: 400;
 }
+.active-card {
+  background: #6e743b;
+}
+.product-card__btn-add:hover {
+  background-color: #718b3b;
+  border-color: #718b3b;
+}
