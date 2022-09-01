@@ -42,6 +42,11 @@
     height: 2.875rem;
   }
 }
+@media (max-width: 508px) {
+  .delivery-item {
+    min-width: 11rem;
+  }
+}
 
 @media (max-width: 470px) {
   .order-checkout-wrapper {
@@ -53,5 +58,11 @@
   }
   .order-checkout-field {
     width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .delivery-item {
+    min-width: 10.5rem;
   }
 }
