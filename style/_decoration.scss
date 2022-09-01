@@ -658,9 +658,6 @@ aside {
 
 .__select {
   position: relative;
-  // width: 230px;
-  // height: 40px;
-  // margin: 0 auto;
 
   &[data-state='active'] {
     .__select__title {
@@ -806,5 +803,8 @@ aside {
     // color: #ffffff;
   }
 }
-
-// background: #e4e7d6;
+.upload-file__text {
+  max-width: 104px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
