@@ -54,7 +54,7 @@ function filter() {
 }
 filter();
 
-const cartToys = () => {
+const cartTea = () => {
   const goodsWrapper = document.querySelector('.card-container');
 
   goodsWrapper.addEventListener('click', (event) => {
@@ -64,4 +64,4 @@ const cartToys = () => {
     }
   });
 };
-cartToys();
+cartTea();
