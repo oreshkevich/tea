@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const forms = document.querySelectorAll('form');
   const inputFile = document.querySelectorAll('.upload-file__input');
 
-  /////////// Кнопка «Прикрепить файл» ///////////
   inputFile.forEach(function (el) {
     let textSelector = document.querySelector('.upload-file__text');
     let fileList;

@@ -12,6 +12,7 @@
   <link rel="icon" href="https://moschaitorg.ru/favicon.ico" type="image/x-icon">
   <script src="./js/main.js" defer></script>
   <script src="./js/file.js" defer></script>
+  <script src="./js/select.js" defer></script>
   <title>Backed</title>
 </head>
 
@@ -74,7 +75,24 @@
                   <div class="order-checkout-field-container__row">
                     <div class="order-checkout-field order-checkout-field--100">
                       <div class="form__wrapper">
-                        <label for="select" class="order-checkout-field__label">Метод связи</label>
+                        <div class="order-checkout-field__label">Метод связи</div>
+                        <div class="__select input-form-select" data-state="">
+                          <div class="__select__title" data-default="Option 0">Телефон</div>
+                          <div class="__select__content">
+                            <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                              checked />
+                            <label for="singleSelect0" class="__select__label">Телефон</label>
+                            <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect1" class="__select__label">WhatsApp</label>
+
+                            <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect4" class="__select__label">Почта</label>
+                            <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect4" class="__select__label">Телефон</label>
+                          </div>
+                        </div>
+
+                        <!-- <label for="select" class="order-checkout-field__label">Метод связи</label>
                         <select class="input-form-select" name="select" id="select">
                           <option id="telephone" class="popup-option" value="telephone">Телефон
                           </option>
@@ -82,7 +100,7 @@
                           </option>
                           <option id="mail" class="popup-option" value="mail">Почта
                           </option>
-                        </select>
+                        </select> -->
                       </div>
                     </div>
                   </div>
