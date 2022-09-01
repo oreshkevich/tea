@@ -25,3 +25,15 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
 //   selectSingle_title.textContent =
 //     selectSingle_title.getAttribute('data-default');
 // });
+
+const deliveryItemButton = document.querySelector('.delivery-item__button');
+function functionName() {
+  if (document.documentElement.clientWidth < 400) {
+    console.log('hi');
+    deliveryItemButton.value = 'Выбрать ПВЗ';
+  } else {
+    deliveryItemButton.value = 'Выбрать пункт ПВЗ';
+  }
+}
+window.onload = functionName;
+window.onresize = functionName;

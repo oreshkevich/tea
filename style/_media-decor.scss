@@ -66,3 +66,18 @@
     min-width: 10.5rem;
   }
 }
+
+@media (max-width: 400px) {
+  .delivery-item {
+    min-width: 9rem;
+  }
+  .delivery__row .delivery-item {
+    margin-right: 11px;
+  }
+  .delivery-item__title {
+    font-size: 0.9rem;
+  }
+  .delivery-item__description {
+    font-size: 0.8rem;
+  }
+}
