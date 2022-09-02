@@ -67,6 +67,16 @@
     display: none;
   }
 }
+
+@media (max-width: 570px) {
+  .product-card__out-of-stock {
+    padding: 0 0px 6px 0px;
+  }
+  .out-of-stock {
+    padding: 9px;
+    font-weight: 400;
+  }
+}
 @media (max-width: 491px) {
   .directory-content__body {
     display: flex;
@@ -79,5 +89,8 @@
   .directory-content__product {
     width: calc((100% - 10px) / 1);
     margin: 0 0px 6px 0;
+  }
+  .out-of-stock {
+    padding: 13px;
   }
 }
