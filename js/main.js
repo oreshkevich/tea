@@ -12,21 +12,33 @@ function order() {
 
   ticketsCard.addEventListener('click', (event) => {
     let target = event.target;
-    console.log(event.target.value);
+    console.log(event.target);
+    console.log(event.target.dataset.point);
+    console.log(event.target.getAttribute('data-point'));
     if (target.value === 'courier') {
       orderCourier.classList.add('delivery-item--active');
       orderPostamat.classList.remove('delivery-item--active');
       orderPickup.classList.remove('delivery-item--active');
       deliveryAddress.classList.add('hide');
       orderDeliveryCourier.classList.remove('hide');
-    } else if (target.value === 'postamat') {
+    }
+    if (target.value === 'postamat') {
       orderPostamat.classList.add('delivery-item--active');
       orderCourier.classList.remove('delivery-item--active');
       orderPickup.classList.remove('delivery-item--active');
       postamates.classList.remove('hide');
       deliveryAddress.classList.add('hide');
       orderDeliveryCourier.classList.add('hide');
-    } else {
+    }
+    if (event.target.dataset.point === 'point') {
+      orderPostamat.classList.add('delivery-item--active');
+      orderCourier.classList.remove('delivery-item--active');
+      orderPickup.classList.remove('delivery-item--active');
+      postamates.classList.remove('hide');
+      deliveryAddress.classList.add('hide');
+      orderDeliveryCourier.classList.add('hide');
+    }
+    if (target.value === 'pickup') {
       orderPickup.classList.add('delivery-item--active');
       orderCourier.classList.remove('delivery-item--active');
       orderPostamat.classList.remove('delivery-item--active');
@@ -36,4 +48,4 @@ function order() {
     }
   });
 }
-order();
+// order();

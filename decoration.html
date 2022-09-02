@@ -13,6 +13,7 @@
   <script src="./js/main.js" defer></script>
   <script src="./js/file.js" defer></script>
   <script src="./js/select.js" defer></script>
+  <script src="./js/clientWidth.js" defer></script>
   <title>Backed</title>
 </head>
 
@@ -76,31 +77,24 @@
                     <div class="order-checkout-field order-checkout-field--100">
                       <div class="form__wrapper">
                         <div class="order-checkout-field__label">Метод связи</div>
-                        <div class="__select input-form-select" data-state="">
-                          <div class="__select__title" data-default="Option 0">Телефон</div>
-                          <div class="__select__content">
-                            <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
-                              checked />
-                            <label for="singleSelect0" class="__select__label">Телефон</label>
-                            <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect1" class="__select__label">WhatsApp</label>
-                            <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect2" class="__select__label">Почта</label>
-                            <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect3" class="__select__label">Телефон</label>
+                        <div class="order-checkout__select input-form-select" data-state="">
+                          <div class="order-checkout__select--title" data-default="Option 0">Телефон</div>
+                          <div class="order-checkout__select--content">
+                            <input id="singleSelect0" class="order-checkout__select--input" type="radio"
+                              name="singleSelect" checked />
+                            <label for="singleSelect0" class="order-checkout__select--label">Телефон</label>
+                            <input id="singleSelect1" class="order-checkout__select--input" type="radio"
+                              name="singleSelect" />
+                            <label for="singleSelect1" class="order-checkout__select--label">WhatsApp</label>
+                            <input id="singleSelect2" class="order-checkout__select--input" type="radio"
+                              name="singleSelect" />
+                            <label for="singleSelect2" class="order-checkout__select--label">Почта</label>
+                            <input id="singleSelect3" class="order-checkout__select--input" type="radio"
+                              name="singleSelect" />
+                            <label for="singleSelect3" class="order-checkout__select--label">Телефон</label>
 
                           </div>
                         </div>
-
-                        <!-- <label for="select" class="order-checkout-field__label">Метод связи</label>
-                        <select class="input-form-select" name="select" id="select">
-                          <option id="telephone" class="popup-option" value="telephone">Телефон
-                          </option>
-                          <option id="WhatsApp" class="popup-option" value="WhatsApp">WhatsApp
-                          </option>
-                          <option id="mail" class="popup-option" value="mail">Почта
-                          </option>
-                        </select> -->
                       </div>
                     </div>
                   </div>
@@ -136,14 +130,6 @@
                       адрес, телефон.)</span>
                   </label>
 
-                  <!-- <div class="input__wrapper">
-                    <input name="file" type="file" name="file" id="uploaded-file" class="input input__file" multiple>
-                    <label for="input__file" class="input__file-button">
-
-                      <span class="input__file-button-text">Выбрать</span>
-                    </label>
-                    <div id="file-name"></div>
-                  </div> -->
                   <div class="upload-file__wrapper">
                     <input type="file" name="files[]" id="upload-file__input_1" class="upload-file__input"
                       accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip"
@@ -166,57 +152,58 @@
                   <div id="delivery-other" class="delivery-hide">
                     <div class="delivery-hide order-form__card">
                       <div class="delivery__row">
-                        <label for="pickup" class="delivery-item  delivery-item--active" id="order-pickup">
+                        <div class="delivery-item  delivery-item--active" id="order-pickup">
                           <span class="delivery-item__title">Самовывоз</span>
                           <span class="delivery-item__description">
                             5 – 7 авг <br>
                             <span>от 135 руб.</span>
                           </span>
-                          <input class="store_radio" type="radio" id="pickup" value="pickup" checked="checked">
-                        </label>
-                        <label for="postamat" class="delivery-item" id="order-postamat">
+                          <!-- <input class="store_radio" type="radio" id="pickup" value="pickup" checked="checked"> -->
+                        </div>
+                        <div class="delivery-item" id="order-postamat">
                           <span class="delivery-item__title">Доставка Via.Delivery</span>
                           <span class="delivery-item__description">
                             1-6 дней <br>
                             <span>от 143 руб. до 187 руб.</span>
                           </span>
-                          <input class="store_radio" type="radio" id="postamat" value="postamat">
-                          <input type="button" class="delivery-item__button" value="Выбрать пункт ПВЗ">
+                          <!-- <input class="store_radio" type="radio" id="postamat" value="postamat"> -->
+                          <input type="button" id="point" class="delivery-item__button js-point" data-point="point"
+                            value="Выбрать пункт ПВЗ">
+                        </div>
 
-                        </label>
-
-                        <label for="courier" class="delivery-item" id="order-courier">
+                        <div class="delivery-item" id="order-courier">
                           <span class="delivery-item__title">Курьер</span>
                           <span class="delivery-item__description">
                             5 авг <br>
                             <span>300 руб.</span>
                           </span>
                           <input class="store_radio" type="radio" id="courier" value="courier">
-                        </label>
-                        <label for="boxberry-pickup" class="delivery-item">
+                        </div>
+                        <div class="delivery-item">
                           <span class="delivery-item__title">Boxberry</span>
                           <span class="delivery-item__description">
                             5 – 7 авг <br>
                             <span>от 135 руб.</span>
                           </span>
-                          <input class="store_radio" type="radio" id="boxberry-pickup" value="" checked="checked">
-                        </label>
-                        <label for="boxberry-postamat" class="delivery-item">
+                          <!-- <input class="store_radio" type="radio" id="boxberry-pickup" value="boxberry-pickup"
+                            checked="checked"> -->
+                        </div>
+                        <div class="delivery-item">
                           <span class="delivery-item__title">Boxberry курьер</span>
                           <span class="delivery-item__description">
                             6 – 7 авг <br>
                             <span>от 135 руб.</span>
                           </span>
-                          <input class="store_radio" type="radio" id="boxberry-postamat" value="">
-                        </label>
-                        <label for="boxberry-courier" class="delivery-item">
+                          <!-- <input class="store_radio" type="radio" id="boxberry-postamat" value=""> -->
+                        </div>
+                        <div class="delivery-item">
                           <span class="delivery-item__title">Почта россии</span>
                           <span class="delivery-item__description">
                             5 авг <br>
                             <span>300 руб.</span>
                           </span>
                           <input class="store_radio" type="radio" id="boxberry-courier" value="">
-                        </label>
+                        </div>
 
                       </div>
                     </div>
