@@ -12,6 +12,12 @@ function modal() {
       modal.classList.add('hidden');
     }
   });
+  modal.addEventListener('click', (e) => {
+    console.log(e.target);
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
 }
 modal();
 
